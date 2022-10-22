@@ -1,0 +1,20 @@
+- Freitag übernächste Woche
+- Studienleistung durch Klausur
+
+-------------------------------------------------------------------------------
+
+- customer is one instance
+- test instance -> target unknown
+- hat -> our estimation
+- all about finding good f's
+- parameter -> everything thta can change the decision
+- loss function how far from correct decision
+- error 0 or 1
+- regulariazion to prevent overfitting
+- overfitting: learn data, but not the data
+- mimic agent e.g. doctor
+- ground trouth?
+- 19: switch function
+- decision tree -> stepwise function
+- replace agents by functions
+- bayes: change initial belive by new informaiton
