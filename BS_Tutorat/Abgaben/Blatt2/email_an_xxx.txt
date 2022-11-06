@@ -1,0 +1,32 @@
+Hallo Jürgen,
+
+> Ich habe bisher einige Probleme im Kurs, und ich fürchte, ich bin schon weit im Rückstand.
+Die Studienleistung gibt es sowieso quasi geschenkt, du musst nur irgendwas abgeben, so wie du es bei der letzten Abgabe gemacht hast. Und mit meinen Aufnahmen der Tutorate sollte es hoffentlich verständlich sein: https://www.youtube.com/watch?v=o4r78tZ2QcI&list=PLmsC317bB1b304w97wLWjF1powXfBHF9D&index=1
+
+> Ich habe die erste Aufgabe nicht eingereicht, weil ich große Probleme mit Putty und der Remote-Anmeldung im Rechenzentrum hatte. Ich dachte, es würde sich irgendwann von selbst beheben, aber das ist nicht passiert. Wenn ich zu Hause versuche, Putty zu verwenden, registriert es mein Passwort nicht als korrekt und friert oft ein und gibt mir eine Fehlermeldung, zuletzt "Software verursacht Verbindungsabbruch". Ich konnte mich noch nicht im Rechenzentrum anmelden.
+Vielleicht hilft dir meine Putty Anleitung etwas weiter, die ich der Email angehängt hab. Ich hatte noch nie Probleme nachdem der Login geklappt hat, daher bin ich bei "Software verursacht Verbindungsabbruch" ebenfalls ratlos. Aber vielleicht findest du in meiner Anleitung etwas was dir weiterhilft. Ich geb in nächsten Tutorat mal eine kleine Einführung in Putty, vielleicht können wir an deinem Fallbeispiel ja ergründen, warum es nicht funktioniert.
+
+> Ich habe einen Windows-Rechner. Soll ich für die praktischen Fragen einfach einen Linux-Emulator installieren? Wie ich sehe, gibt es mehrere Anweisungen, was in Bezug auf die Software zu tun ist. Ich nehme an, ich suche nur nach der einfachsten Lösung, bevor ich Änderungen an meinem System vornehme.
+Es gibt die Möglichkeit VirtualBox zu verwenden oder WSL (der einfachste Weg) zu installieren. Aber vielleicht bekommen wir ja im nächsten Tutorat raus, was da nicht funktioniert und dann können wir weiterschauen.
+
+> Zu den Fragen, die diese Woche fällig sind: Ich habe heute Morgen nicht am Tutorat teilgenommen, weil ich die ganze Nacht wach war, um die Fragen zu verstehen, und ich habe immer noch nicht die ganze Aufgabe erledigt.
+Dafür gibt es die Aufnahmen: https://youtube.com/shorts/dgdWQsaj5rw?feature=share
+
+> Bin ich richtig zu sagen, dass jeder Befehl die ALU durchlaufen wird? Wenn ja, was ist dann der Sinn der Treiber, die von den Registern zurück zum D-Pfad leiten, zum Beispiel: PCDd, IN1Dd usw.? In der Vorlesung wurde nur ein Beispiel durch den gesamten Datenpfad gegeben. Ich nehme an, ich wünschte, es hätte mehr Beispiele geben können.
+Nö, nicht jeder Befehl muss die ALU durchlaufen, z.B. MOVE ACC IN1 geht über ACCDd, DDId und dann in IN2. Oder bei Storein SP In1 i, brauchst du den oberen Datenbus, um in die Speicherzelle M[<SP>+1] den Wert zu schreiben, der im IN1 Register steht.
+
+> Gehe ich richtig in der Annahme, dass jeder Befehl in den Hausaufgaben im Wesentlichen zwei Zyklen hatte? Zuerst wird der zu bearbeitende Wert (gespeichert, verschoben, hinzugefügt) usw. gefunden und zyklisch durch die ALU und den SRAM geleitet. Zweitens wird es in das Zielregister verschoben. Weicht dieser Zyklus jemals ab?
+Es gibt eine Fetch ud Exexcute Phase. In der Fetch-Phase wird einfach nur der nächste Befehl ins Instruktionsregister geladen.
+
+> Ich habe in den Antworten nicht angegeben, dass der PC iteriert. War das richtig?
+Der PC wird in der Fetch-Phase iteriert, wird interessieren und hier für die Execute Phase.
+
+> Gibt es eine Liste aller Befehlstypen? Sind die im Hilfsmittelblatt angegebenen Befehle die einzig möglichen Befehle?
+Wenn wir vom gleichen Hilfmittelblatt sprechen, dann sind es alle möglichen Befehle, ja. Ich hab dieser Email mal meine Auflistung aller RETI-Befehle angehängt.
+
+> Außerdem bin ich für die Übungen in keiner Gruppe und ich denke, ich sollte mich einer anschließen, da ich so viele Probleme habe.
+Jo, da habe ich schon einen Gruppenpartner, den Marius in der Warteschleife, ich haue dann gleiche hiernach eine Mail raus.
+
+Danke vielmals,
+Kyle Stevens
+
