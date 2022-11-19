@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const axios = require("axios")
 const parser = require("node-html-parser")
 const form = require("form-data")
