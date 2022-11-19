@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 TUTORAT=07
-BLATT=04
-ID="1bWcTfzfSltE0SRiDDOx"
+BLATT=05
+ID="ZCPsVP8FBcYVNnsl9V9L"
 ANZAHL_GRUPPEN=16
 
 # https://stackoverflow.com/questions/18460123/how-to-add-leading-zeros-for-for-loop-in-shell
