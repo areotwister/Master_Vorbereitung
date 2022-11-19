@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>Betriebssysteme WS 2022/2023</title>
+<link rel="stylesheet" type="text/css" href="https://webira.informatik.uni-freiburg.de/portal/Stabilo.css" />
+</head>
+<body>
+<div id="menu">
+<ul class="linklist">
+<li><a href="tutor.cgi?sessionid=1bWcTfzfSltE0SRiDDOx&bgruppe=7">Korrektur</a></li><li><a href="tutorpunkte.cgi?sessionid=1bWcTfzfSltE0SRiDDOx&bgruppe=7">Punkte</a></li><li><a href="tutorpasswort.cgi?sessionid=1bWcTfzfSltE0SRiDDOx&bgruppe=7">Passwort</a></li><li><a href="logout.cgi?sessionid=1bWcTfzfSltE0SRiDDOx&bgruppe=7">Logout</a></li></ul>
+</div>
+<div id="titel">
+<h1>&Uuml;bungsportal</h1>
+</div>
+<div id="main">
+<h2>Betriebssysteme&nbsp;WS&nbsp;2022/2023</h2>
+<h2>Fehler</h2><h3>File existiert nicht</h3></div>
+
+<div id="version">Portal Revision 865, 2008-01-16 13:51:47 +0100 (Wed, 16 Jan 2008) by T. Nopper</div>
+<div id="logo">
+<img src="https://webira.informatik.uni-freiburg.de/portal/Stabilo2.jpg" alt="" />
+</div>
+<div id="logos"><a onclick="window.open('http://ira.informatik.uni-freiburg.de/'); return false;" href="http://ira.informatik.uni-freiburg.de/"><img src="https://webira.informatik.uni-freiburg.de/portal/chipchx2.gif" alt="logo1"/></a><br/>&nbsp;<br/>
+<a onclick="window.open('http://www.uli-campus.de/'); return false;" href="http://www.uli-campus.de/"><img src="https://webira.informatik.uni-freiburg.de/portal/uli-block-uli32small.gif" alt="logo2"/></a><br/>&nbsp;<br/>
+</div>
+<div id="menugrafik">
+<img src="https://webira.informatik.uni-freiburg.de/portal/Stabilo.jpg" alt="" />
+</div>
+
+</body></html>
