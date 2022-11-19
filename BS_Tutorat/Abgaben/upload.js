@@ -41,7 +41,7 @@ async function upload(points, students, files) {
     for (let i in files) {
         let filename = files[i].substring(2,4)
         console.log(filename)
-        data.append("file"+filename, fs.createReadStream("./Blatt"+ blatt_g +"/korrektur/"+files[i]), {filename: files[i], contentType: 'application/pdf', knownLength: fs.statSync("./Blatt"+ blatt_g +"/korrektur/"+files[i]).size})
+        data.append("file"+filename, fs.createReadStream("./Blatt"+ blatt_g +"/Korrektur/"+files[i]), {filename: files[i], contentType: 'application/pdf', knownLength: fs.statSync("./Blatt"+ blatt_g +"/Korrektur/"+files[i]).size})
     }
 
     for (let i in points){
@@ -74,7 +74,7 @@ async function main() {
         console.log(line)
     })
     let students = await student()
-    let files = fs.readdirSync("./Blatt"+ blatt_g +"/korrektur")
+    let files = fs.readdirSync("./Blatt"+ blatt_g +"/Korrektur")
     console.log(students)
     console.log(files)
     console.log(points)
