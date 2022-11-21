@@ -5,6 +5,7 @@
 # ==============0:00:00==============
 <!-- - `0:00:00`: the court now. -->
 <!-- - `0:00:04`: okay so today we're going to talk about him at the cemetery and so starting with the chapter two and to going into the. -->
+- ![new_1](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:00:16_0001.png)
 <!-- - `0:00:18`: instruction set architecture or describe it as as one example in the room. -->
 <!-- - `0:00:26`: i'll i'll make some references to other the other instruction sets in particular of course we're going to look at was a little bit it. -->
 <!-- - `0:00:37`: x eighty six on which this laptop is running of course and but like the only dive really deep into the. -->
@@ -39,6 +40,7 @@
 <!-- - `0:06:40`: and the the other reason so this was lynn kind of initially it and instead of a trend of making things more contractors to help the procurer for aids hiv programs nowadays of course are endless at least in the eighties and it was clear that sort of these compilers and you need to use compilers anyhow right now. -->
 <!-- - `0:06:59`: coco etc so that's why you have one. -->
 - `0:07:03`: and **there was a trend so this was started by the stupid pioneers of our book and his encourage than to do the opposite...** so really put more of the functionality into the compiler and keep the instructions said simply.
+- ![new_2](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:07:08_0001.png)
 - `0:07:16`: **and this allows us sophisticated optimizations** and **therefore making make the hardware design simpler and more efficient and effective**.
 - `0:07:28`: and now what's happened then added over the years was and this was calling his hers **reduced instruction set architecture** errors or that the name was of risk fine this isn't a name offers five and the first computer which exceed those two guys commercialized.
 - `0:07:48`: of or like put forward was this **mips** which was kind of for long time the embedded one of the embedded processors so most a hard disk at mips controllers midfield processes in it ends.
@@ -57,6 +59,7 @@
 <!-- - `0:11:21`: not chips i mean you can take the risk five is fine as is so there's a kind of as others tried the minds of esteemed becomes open source. -->
 <!-- - `0:11:30`: when doing do he began getting away from the legacy and that was also charged with designing the limits of this as part of the lecture i'm going to also show you. -->
 <!-- - `0:11:41`: alright so i said this already so there's this sir. -->
+- ![new_3](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:11:41_0002.png)
 <!-- - `0:11:44`: risk five instruction set end. -->
 - `0:11:49`: and it's called for and it is like **from two thousand and ten** you find here lots of materials here on this webpage i hope your you looked at his already been on the show you this didn't open it yet risk fine art and there's like lots of going.
 <!-- - `0:12:08`: any interested in says i'm not saying you see this completely take over the oil companies and i think i had an expense already last time that intel is building this new fab in the end you can run in is it marked in bulk like a logo where did half has played into also take instead of external does. -->
@@ -85,6 +88,7 @@
 <!-- - `0:16:33`: an injured just reached seven nanometre but they didn't have it like last year. -->
 <!-- - `0:16:39`: and this requires like very sophisticated machines and in the most advanced machine is actually dutch as as company which produced these machines is a dutch company and. -->
 <!-- - `0:16:51`: it's also quite interesting sort of that there's like an southern race for this machinery for his facts alright but now let's get our technical terms. -->
+- ![new_4](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:17:01_0003.png)
 <!-- - `0:17:05`: the simplest thing about a center so so so suddenly yeah so it's probably you have seen this with his red tea but now you can maybe rethink what you remember from back then. -->
 <!-- - `0:17:18`: an illustrated through self more general principles a king and an associate of the muslim in the simplest and operational the computer can do is to compute and compute is usually associated with arithmetic operations so adding two numbers rate almighty plying him. -->
 <!-- - `0:17:35`: and then. -->
@@ -100,6 +104,7 @@
 <!-- - `0:19:14`: okay. -->
 - `0:19:17`: and by by sort of easy likely this comes readiness and business at a b c by this you already see all this or **risk five**.
 - `0:19:26`: **is what people call a register register machine** are like **the two operands can be in the register and you store the result in another register** the new rules or reside in another register **while in an accumulator like reti would always one target register always has to be one of the sources**.
+- ![new_5](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:19:32_0004.png)
 <!-- - `0:19:46`: says. -->
 <!-- - `0:19:50`: rk and in addition his wife says and all obligations look like that said there's laws the station is does not exist but will come back to this later the insists and by the following treatment will show you this already now. -->
 # ==============0:20:00==============
@@ -126,10 +131,15 @@
 <!-- - `0:23:31`: a sampler and then there's this linker which are which. -->
 - `0:23:36`: links it then with libraries and there's also longer later which we might actually not touch upon in this letter but you can think of **there's a compiler which produces something which is then executed by the**.
 - `0:23:50`: **processor** and yeah and the first thing which is a very interesting concept and.
+- ![new_6](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:23:50_0007.png)
 - `0:23:58`: and is you need to **get something this is called an abstract syntax tree** asked and and this just **translates to that the structure of the program into something which can be managed by a program** viable croker right this is the first interesting concept okay and then an hour **this is the result then**.
+- ![new_7](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:24:00_0008.png)
 - `0:24:19`: **this will be the result of the compilation of this loop right**.
 - `0:24:25`: low grade however **here you see here this x0 already** that's our zero here the **register which is contents the zero**.
+- ![new_8](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:24:28_0009.png)
+- ![new_9](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:24:33_0010.png)
 - `0:24:39`: but **these guys here they're not real they're just virtual registers** so what a **compiler really does it takes this ast and translates it into something which is called intermediate code**.
+- ![new_10](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:24:41_0011.png)
 - `0:24:52`: **maybe you heard about lvlbm, it was pioneered by the clang project actually first in apple and that's an intermediate code** and **it's targeted towards c and c plus plus** and of course you could also the one which is targeted towards was clive already services ltd the will level.
 # ==============0:25:00==============
 <!-- - `0:25:12`: that it elevated. -->
@@ -140,12 +150,15 @@
 <!-- - `0:25:57`: i want to show you these two pictures and what kind of optimizations to compilers do i do like his program there loot and his loop and you see it this loop there's lots of things executed so if this runs now for a while and then it would execute you see everything which is here upon this path. -->
 <!-- - `0:26:17`: both right for every loop iteration. -->
 - `0:26:21`: but then if you look carefully and this is like the first of a festival called and the code motion so you can you **realize that some of these computations are redundant you only need to do them once you can pull them out of the loop**.
+- ![new_11](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:26:21_0012.png)
 - `0:26:34`: and are absurd in nunca trump **and then it would look like this** train.
 - `0:26:43`: so you see this is of course we foster because the are the only execute is for instructions dead end however the compiler can even do a little bit more so there is this you will see later this indices in **these indices are incremrent and in sometimes you can and**.
+- ![new_12](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:26:43_0013.png)
 - `0:27:03`: at you **you can actually avoid reading them and then**.
 - `0:27:09`: **get down here to this last version** which only has martha could find it.
 - `0:27:15`: surrey here **this version down here which has only two** are earth.
 - `0:27:24`: the **instructions** and bright enough has **implicitely we can assume every instruction takes that one clock cycle and this way we optmize of course the program heavily right by factor ten or so**.
+- ![new_13](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:27:26_0014.png)
 <!-- - `0:27:37`: and that's what the compiler does for you and any new one is of course people it when it's mainly in the right in europe and assemble into it manually in turn. -->
 <!-- - `0:27:49`: and is still important i would say and made it come to some some of his assets. -->
 <!-- - `0:27:55`: during this lecture to understand like what the compiler is capable of doing and what it's not capable of doing so in certain cases you only get the fastest possible code if you release a good figure all the compiler would not be able to know that okay so let me rewrite the program in a certain way so that that the compiler can. -->
@@ -156,6 +169,7 @@
 <!-- - `0:29:13`: and from the gcc and also like for for the heal if you're on an mta hotmail or. -->
 <!-- - `0:29:21`: they inherited some of his combat command line options and in particular this optimization or oliver's end. -->
 <!-- - `0:29:33`: and and you see on the left a couple of. -->
+- ![new_14](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:29:35_0015.png)
 <!-- - `0:29:38`: are a couple of optimizations of is called motion for instance at what he saw in action and his induction valuable emanation then there's things like globally some are common some expression in the nation as strengths reduction and this is a propagating constant so this is already happening in the desert optimization level one. -->
 - `0:29:58`: on in interior this is the highest one and that would also inline and this is namor one of the most powerful of optimization it would **inline sort of functions if they're small enough** and then the reason for that is because you can **instead of calling the function you will take the code of the function put it in**.
 # ==============0:30:00==============
@@ -169,6 +183,7 @@
 <!-- - `0:32:12`: alright. -->
 <!-- - `0:32:14`: so the now back so why did i explain this well because we have your c code and and let's the what the compiler could give you a writer. -->
 <!-- - `0:32:29`: in the lecture i mean i was in the exercises and in hiv deposited later in the exam were were what you do is somehow for some time showing you see code and app and assembler code. -->
+- ![new_15](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:32:31_0016.png)
 <!-- - `0:32:43`: and. -->
 <!-- - `0:32:45`: dare mighty beliefs of all of you to get around to. -->
 <!-- - `0:32:51`: acquainted with his soul of course. -->
@@ -191,20 +206,26 @@
 <!-- - `0:35:23`: this stuff at the bottom is kind of used for it is kind of redundant but the real cause of this ever is here you see he also the labor. -->
 <!-- - `0:35:32`: and it gets simpler. -->
 <!-- - `0:35:35`: so here the uh yeah we'll come back to this layer did but if if your ad here minus or three because the vendor compiler is doing mid way more easy than its shrinks to the server or four or six five lines this is the simpler code earth's core. -->
+- ![new_16](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:35:44_0018.png)
 <!-- - `0:35:55`: responding to and if you're not going to discuss x eighty six much and. -->
 <!-- - `0:36:02`: and and actually only these these three raid are are up here or are necessary in the am ok and if you don't have the same with be from a pink i still have it at gcc. -->
+- ![new_17](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:36:11_0019.png)
 <!-- - `0:36:19`: minus s artists to see then that attested s here is his risk five and yeah that cool thing is that. -->
+- ![new_18](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:36:23_0020.png)
 <!-- - `0:36:32`: now we have all these cross compilers like geared city you can just install them with a package manager. -->
 <!-- - `0:36:40`: and ye. -->
 <!-- - `0:36:42`: yan looks also complicated servers are not going to discuss merchant and maybe already now so this is the stack pointer for for handling automatically yellows will discuss the syllabus later and this needs to be saved somehow into depth so that's why there's laid lots of stuff going on. -->
 <!-- - `0:37:02`: while if you optimize this thing also with minus one treated get very close of course i didn't tested this morning yes it should be very close here to be to what we see on a slide. -->
 <!-- - `0:37:16`: there's one difference yeah and jesse also the sop ripening question am. -->
 <!-- - `0:37:23`: i dislike a couple of things which a lot of whispers kid i cannot explain yet but will come to this image the data the hope is this rochester name's a zero a zero a one and so on. -->
+- ![new_19](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:37:26_0021.png)
 <!-- - `0:37:37`: bags like phenolic just you sit you see it's the same structure it's on the slides for music executives say exhibited the black ring. -->
 <!-- - `0:37:48`: however there's another version which for that you need to have. -->
 <!-- - `0:37:53`: i like the you need to somehow install this cross compiler and so if for instance you have a ubuntu machine or like a virtual ubuntu machine just tick this and and it will give you the right command to install this package there are actually many more which is actually pretty cool so he could for instance i'm not sure like leather. -->
 <!-- - `0:38:13`: i installed something else like earth. -->
 - `0:38:17`: no **s three seven** no i did not that one but **spark** was not one but you can do the same with sort of different compilers and and and that's very cool so this didn't exist like accompanies in years ago either so that's awesome what's better now you can really like see what the samplers with different machines and furthermore.
+- ![new_20](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:38:19_0022.png)
+- ![new_21](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:38:22_0023.png)
 <!-- - `0:38:37`: sure. -->
 <!-- - `0:38:39`: you can actually add compile programs and we'll do this later in the lecture or in risk fire with his pilar and executed on this machine with emulator. -->
 <!-- - `0:38:55`: okay so then you would really run the the real machine code generated for his wife. -->
@@ -219,6 +240,7 @@
 <!-- - `0:40:06`: and then you can europe. -->
 <!-- - `0:40:10`: is he like it remembered in a cookie the last time i used his webpage usually will get you if you now started like can started to do it will for instance probably give you risk some gcc and that then is either already compiling and on the right to see exactly what i. -->
 <!-- - `0:40:29`: didn't on the on the command line and. -->
+- ![new_22](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:40:30_0024.png)
 - `0:40:35`: yes **i can for instance also do it with a**.
 - `0:40:41`: **thirty two bit version** and you see what changed anybody paid attention.
 <!-- - `0:40:46`: yes. -->
@@ -230,6 +252,7 @@
 - `0:42:09`: and for **risc five** it's so similar so **they have different variants of this assembler**.
 <!-- - `0:42:18`: and and as actually really features so you can have a couple of features we're going to look at them. -->
 <!-- - `0:42:24`: in one teach off of this is whether solely to get or whether it's sixty puppets and. -->
+- ![new_23](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:42:24_0025.png)
 <!-- - `0:42:35`: what you just saw. -->
 - `0:42:37`: am **on a thirty two bit machine** and.
 - `0:42:42`: **reading the thirty two bit word is the same as reading the full word** because that's the that the same **while on a sixty four bit machine...** it was the default here what we had before this one here.
@@ -243,6 +266,7 @@
 <!-- - `0:43:35`: if somebody was faster than me. -->
 <!-- - `0:43:38`: yeah fuckin. -->
 - `0:43:40`: because now as **long as sixty four bit...** and edit now i'm assuming a sixty four bit machine and then of course you seats are the same so when he was a cease and and eschewing goes down to machine code and now **this program here would be the same on both machines but it would have slightly different semantics** it so this is very.
+- ![new_24](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:43:43_0026.png)
 - `0:44:00`: cool so you don't install it or play at least with this one and i can also tell you what what's our **favorite exercise...** are well aware of your taking a seabrook until the left become eyelids.
 <!-- - `0:44:15`: then on the right to be remove something ring. -->
 <!-- - `0:44:18`: okay and then let you put in this the curriculum and m this is a good way of doing sort of on paper assembler programming right because it's it's way simpler to salute so that's why it's good for you to play with this in figure one on the left i have a broker who can see her too seriously plus bus and on the right i'll get. -->
@@ -259,6 +283,7 @@
 <!-- - `0:45:49`: okay. -->
 <!-- - `0:45:53`: so the first design principle. -->
 <!-- - `0:45:57`: or was that was already in mips the case that you included a registered right in the india sampling will need to tell the cabbage is the destination and into alleyways and until you have any surplus vulcan and and you need to buy it split. -->
+- ![new_25](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:46:12_0027.png)
 <!-- - `0:46:17`: that was a year. -->
 <!-- - `0:46:20`: and it seems to be with compromise so people also experimented with a sixteen but thirty two seems to be assertive what people agree. -->
 <!-- - `0:46:30`: in i. -->
@@ -275,6 +300,7 @@
 <!-- - `0:48:00`: sir register zero is always zero. -->
 <!-- - `0:48:03`: right so this is what we saw here. -->
 <!-- - `0:48:06`: if i want a new commander the one who put behind me i tend to like them. -->
+- ![new_26](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:48:12_0028.png)
 <!-- - `0:48:16`: and. -->
 <!-- - `0:48:18`: then it is some x one is a return address and that's also like implicit in the sampler contract located but the rest here and these are really sort of contracts between the processor and people operating system so so here's a mistake pointer rental. -->
 <!-- - `0:48:38`: all of it i shall be able to talk about that day. -->
@@ -297,16 +323,22 @@
 <!-- - `0:51:36`: i need to show you now and also this webpage and and. -->
 <!-- - `0:51:44`: right so this one bit here it's like on smoking google it but i could also link in derpy illness i think and so does his time. -->
 <!-- - `0:51:56`: am particular here the. -->
+- ![new_27](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:51:58_0030.png)
 - `0:52:04`: united shore okay so it isn't like that at assembly programmers manual submitted a little bit misleading because it's here under the salt sanction gear none is anon so let this get here does not always **this is part of what i said wake up the application binary interface which sits on top of the instruction**.
+- ![new_28](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:52:05_0031.png)
 - `0:52:24`: **set architecture**.
 <!-- - `0:52:26`: and it's very useful for our colossal pay attention because on the slides he don't do it but i think is is a. -->
 - `0:52:34`: not good so maybe we should have done the ccd **on the left all these**.
+- ![new_29](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:52:34_0039.png)
 - `0:52:38`: **registers** king.
 - `0:52:41`: and **then you see here in the application binary interface so in the assembler**.
+- ![new_30](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:52:45_0032.png)
 - `0:52:47`: **instructions you could also do...** yeah maybe i still have this clip showing his soul.
 - `0:52:57`: oh no he does not but i could do for instance **if this would be x zero**.
+- ![new_31](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:53:04_0033.png)
 - `0:53:05`: **i could also make it zero**.
 - `0:53:08`: okay **so the point is you could use the assembler both like in the numerical value of which of course gives you the 5 bit encoding from zero to thirty to thirty one**.
+- ![new_32](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:53:08_0034.png)
 - `0:53:21`: **or you could use the symbolic encoding in the assembler**.
 <!-- - `0:53:28`: and and now you see here if this x ten and eleven these were the return values and then the the other four here note that for what is to the the other six here these are also arguments rights and in total you could have. -->
 <!-- - `0:53:46`: it's from two to it's actually. -->
@@ -324,23 +356,32 @@
 <!-- - `0:54:55`: and and this is a tool. -->
 # ==============0:55:00==============
 <!-- - `0:55:00`: a three rape so very simple that of course like in the in the exploitation woods x x ten x eleven x thirteen grey. -->
+- ![new_33](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:55:03_0035.png)
 <!-- - `0:55:11`: again i guess you get deployed rain that clear and then the recited to you you see isn't that in essence a zero. -->
+- ![new_34](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:55:11_0036.png)
 <!-- - `0:55:23`: and it would of course compiled exactly the same i hope you get the one. -->
+- ![new_35](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:55:24_0037.png)
 - `0:55:29`: and of course i would need to change here also the excess and that's why i why this this version here is is actually better and the **assemblers all understand it too** so he do manually assembler.
+- ![new_36](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:55:41_0038.png)
 <!-- - `0:55:44`: and as he saw the compiler will even generate this a zero you could also put here these guys are. -->
 <!-- - `0:55:55`: alright and the names are as follows right or so zero we saw already then the return address is his x one steak pointer loaded pointer thread pointer dennis is a temporary so that you can using the function as you like about me. -->
 - `0:56:13`: do anything with it it's just really stretched face and then there's this **frame pointer** which yet **has to do with function calls** can get come back to this later **this one you have to save that's why it's called s** so **saving means if you as a function are using this register you have to restoring after you used it**.
 <!-- - `0:56:33`: it. -->
 <!-- - `0:56:35`: and and yeah we'll later see why white is is actually important and then also they made a decision you see how many of the of how many there are there the more virtuous which need to be saved. -->
+- ![new_37](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:56:44_0040.png)
+- ![new_38](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:56:48_0041.png)
 - `0:56:49`: and and you're against emperor's israel **ideally you want to have as many temporaries as possible because they are fast** but of course **because you simply want to have only**.
+- ![new_39](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:56:51_0042.png)
 - `0:57:01`: **thirty two registers you are kind of restricted and you need to sort of make a decision** in in and this is such of course and not completely in.
 <!-- - `0:57:15`: an enlightened is not random so of course this is like experience from myths which is to now what is now forty years old ran into now so it's like an evolution so that's why also does respite looking at is a good example right so you see how sort of like what's what what kind of weird design decisions which prevail and which are. -->
 <!-- - `0:57:34`: arc could and could are considered to be useful. -->
 <!-- - `0:57:40`: okay what does he also and his flight down here already one for mentioned it are pseudo code instructions so here are some appropriations which actually will turn into multiple instructions and you're down here there's a tables at the very end. -->
 <!-- - `0:57:55`: yeah. -->
 - `0:57:57`: **pseudoinstructions so these are sort of not really** much length not met one to one to **machine code** but they would exit with **something more complicated** and we'll see some of them later rate so for instance he had this one is pretty cool.
+- ![new_40](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:58:02_0043.png)
 - `0:58:15`: maybe you've heard like **nop** it at the wall construction the package **doesn't do anything** yet **this is the same as if you would add x zero immediate to x zero which is always zero and store it in x zero which doesn't make sense because it's like a sink**.
 <!-- - `0:58:33`: and so on rights are like yoga or this one you see i have recording the plague blackboard usually in other resemblance you have the move instruction which takes the or which takes on a register the source register and moves it into another one of the greatest aid becomes a beam. -->
+- ![new_41](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_00:58:45_0044.png)
 <!-- - `0:58:50`: and this of course the same as what you see here on the right you take the the source register here you add zero to it so this is why there's an iron for immediate this is a constant and history in brighter. -->
 - `0:59:05`: okay so so that's why and of course like if you're if you're **filling on exercises or an exam or whatever**.
 - `0:59:14`: **you can use any of these** and even if it's closed and not in vegas trade then we are happy with it of course but you've been completely new five i commend instruction be given the leaded coloured but but but sort of this art was sensible and after like after this a part of the lecture and of course.
@@ -355,11 +396,16 @@
 <!-- - `1:00:12`: implicitly he paid attention to them and all you have seen. -->
 - `1:00:17`: exactly six before a **sixty four bit is called a quad in x eighty six** at while.
 - `1:00:29`: he seemed he's got good examples as sixty four bit depends on whether you're compiling or sixty four bit or thirty two bit **if you compile it in thirty two bit like a word is the same as the basic datatype thirty two bit**. **each register would have thirty two bit in thirty two bit machine**.
+- ![new_42](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:00:40_0053.png)
 - `1:00:49`: sixty for the **sixty four bit would have sixtiy four bit machine**.
 - `1:00:53`: now banana frightened maybe i'll **go back to godbolt here**.
+- ![new_43](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:00:59_0054.png)
 - `1:01:00`: and **if i go back to here thirty two bit, long is sixty four bit** and an evergreen.
+- ![new_44](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:01:02_0052.png)
 - `1:01:11`: **then we're computing with thirty two bit on a sixty four bit machine**. **that's why we need to add here, we're only interested in words, in the terminology from risc five is a word is thirty two bit**.
+- ![new_45](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:01:25_0056.png)
 - `1:01:27`: and **however if you're not going to us a thirty two bit machine right you don't need this anymore because the semantics are the same**.
+- ![new_46](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:01:38_0057.png)
 - `1:01:39`: **because the basic data type is thirty two bit of each register has thiry two bit**.
 <!-- - `1:01:48`: alright then yeah i should also say that last time i gave this lecture i struck a little bit because i. -->
 <!-- - `1:01:56`: this lies the author did for the first edition of the respite book and then people taught him or like herb and said okay you should actually learn. -->
@@ -395,8 +441,10 @@
 <!-- - `1:06:25`: so you can hugo to two specs you see and then here. -->
 <!-- - `1:06:32`: there's the. -->
 <!-- - `1:06:35`: the pdf of december ended the really cool thing is it's like only one list at this size okay and now if you scroll down here you will see. -->
+- ![new_47](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:06:35_0058.png)
 <!-- - `1:06:48`: very early on for fire. -->
 <!-- - `1:06:52`: here. -->
+- ![new_48](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:06:55_0059.png)
 <!-- - `1:06:56`: so we are only talking about his first two years. -->
 <!-- - `1:06:59`: but they have already planned for extensions full length longer words wordstream. -->
 <!-- - `1:07:04`: and this is the compressed one with a sixteen bit indices the. -->
@@ -408,6 +456,7 @@
 - `1:07:52`: **like what kind of instructions are are possible**.
 <!-- - `1:07:56`: so this whole respite as italy might have visited around her straight. -->
 - `1:08:01`: and **the most standard one is of course the one which does integers it does multiply it does floating point it is sixty four bit and it is also privileged instructions for running operating system** this is some a chronic brain and so if i compile with the olmec maybe i can ex.
+- ![new_49](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:08:15_0061.png)
 <!-- - `1:08:21`: truly into this i can do. -->
 - `1:08:26`: no no i didn't prepare it so this will take too long and **you can compile it and then you can look at the file type under linux and then figure out okay this is this particular version** and it's density fault right the one i just said.
 <!-- - `1:08:43`: but maybe for some applications. -->
@@ -426,6 +475,7 @@
 <!-- - `1:10:49`: and then. -->
 <!-- - `1:10:54`: and you need to access his memories of the lord moved from memory into the processor and also store stuff into the memory back. -->
 - `1:11:03`: end and **there are two design decision usually would need to make here**.
+- ![new_50](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:11:11_0060.png)
 - `1:11:12`: and the **first one is little endian verus big endian** to never heard about this little endian is means hook is our only half of your knowledge so let me just explain it earned her a legion sir.
 <!-- - `1:11:27`: though. -->
 <!-- - `1:11:31`: else. -->
@@ -439,11 +489,13 @@
 <!-- - `1:12:14`: right so so for instance if earth. -->
 - `1:12:18`: as indicated this is the one year and the zero zero zero **then his whole thing is the same as two hundred sixty six?**.
 - `1:12:33`: **now and big endian...** for it's usually okay so i'll just the the tune.
+- ![new_51](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:12:33_0063.png)
 <!-- - `1:12:46`: but here's monkey is because it will say something about the interest on your debts the highest getting four hundred. -->
 <!-- - `1:12:56`: this one has the lowest this is his pinky. -->
 - `1:13:02`: and need **little endian...**.
 <!-- - `1:13:05`: **is lik..e** was coming eighty. -->
 - `1:13:10`: it **x eighty six version** that makes any sense does this one.
+- ![new_52](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:13:10_0064.png)
 <!-- - `1:13:15`: but indeed great idea. -->
 <!-- - `1:13:19`: the vpn. -->
 - `1:13:23`: so **this is the common thing and that's why they decided for risc 5 little endian** to the lenient.
@@ -461,6 +513,7 @@
 - `1:14:42`: you **take address one and read those four bytes** by services by **this is a unaliged word** prayer on an island.
 - `1:14:52`: **wherase aligned means you read like thos four bytes starting always at a mulitple of four**.
 # ==============1:15:00==============
+- ![new_53](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:14:53_0065.png)
 - `1:15:02`: and it is also machine it was really the machine with sort of the program with the crush if you root for **early machines would crash if you would read from pointer one**.
 <!-- - `1:15:13`: and now here it was made the decision that you completed the episode sort of whitehall underlying trier he could start reading at it at three or so this is to address two unreachable whites or eight bytes of sixty four. -->
 <!-- - `1:15:34`: and yeah and this is something you need to check of course like the venue to when you think about what's on the loaded program employed right leg for the indian this is completely contrary to read data from you the truth is father benito then want to work with good. -->
@@ -471,6 +524,7 @@
 <!-- - `1:16:09`: so now let's look at. -->
 <!-- - `1:16:13`: at the typical. -->
 - `1:16:16`: as an editor **typical memory instruction**.
+- ![new_54](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:16:21_0066.png)
 <!-- - `1:16:22`: and then. -->
 <!-- - `1:16:27`: there's this concept of a base address or saw indeed. -->
 <!-- - `1:16:32`: in the laity there was this index for it's viciousness very similar by the way and so what you really do here and this is the most common. -->
@@ -484,6 +538,7 @@
 <!-- - `1:17:34`: so yeah a red read the earlier start. -->
 <!-- - `1:17:42`: it is you're the you're the war or is europe and then of course we will be the type he wouldn't have been so for now assume it's a thirty two bit machine and we're having in sources keep on the machine and get any logs frightened you need to tire what is this. -->
 <!-- - `1:18:01`: just like to assume the contents of any use the word size later little bit or sixty four million. -->
+- ![new_55](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:18:06_0067.png)
 <!-- - `1:18:09`: let's say when you board the. -->
 <!-- - `1:18:13`: right then had happen. -->
 <!-- - `1:18:17`: eighty one. -->
@@ -493,6 +548,7 @@
 <!-- - `1:18:55`: actually sixteen but the characters x number but that's not a sport let's assume in manchester. -->
 <!-- - `1:19:04`: the extreme. -->
 <!-- - `1:19:09`: it doesn't matter what it is though estate prices are temporary so he could look it up with a signal then for a grand. -->
+- ![new_56](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:19:14_0068.png)
 <!-- - `1:19:18`: alright and now i want to. -->
 <!-- - `1:19:21`: i. -->
 <!-- - `1:19:24`: and then i have soccer and breakfast you're not using. -->
@@ -517,6 +573,7 @@
 <!-- - `1:21:32`: corresponds to this argument here. -->
 - `1:21:38`: and later restoring it at him in a twelve and is just twelve times or a trade **twelve times eight is ninety six**.
 <!-- - `1:21:50`: and of course the sort of tightening in your head and making ranked but didn't see you get this for free reign because he knows that his ears invite wrong. -->
+- ![new_57](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:22:02_0069.png)
 <!-- - `1:22:05`: alright then you see this is the load instruction it takes years as i said so it takes the waitress or from the register as sixty four bytes to it then gets the starting point of eight eight reads those eight bytes puts me. -->
 <!-- - `1:22:22`: enter the register x nine this was a temporary registers i had to remember that. -->
 <!-- - `1:22:29`: okay then you need to add age to it. -->
@@ -529,6 +586,7 @@
 - `1:23:41`: **i could ask you to do the same for a thirty two bits...** is for disturbed.
 - `1:23:48`: what would change if i would ask the resist thirty two **and assume a and h are bit** while changing.
 - `1:24:03`: ransom maybe i'll write the two worries **on the blackboard** and then luke and.
+- ![new_58](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:24:06_0070.png)
 <!-- - `1:24:10`: one lol. -->
 <!-- - `1:24:13`: because of the worsening years in the eighties. -->
 <!-- - `1:24:20`: read the honeymoon. -->
@@ -540,11 +598,13 @@
 <!-- - `1:24:57`: what the one you see here on one on the slightest upper mod one local to the lower one would be the difference in the super bowl is on the dealer he said. -->
 # ==============1:25:00==============
 <!-- - `1:25:11`: oh. -->
+- ![new_59](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:25:15_0071.png)
 <!-- - `1:25:16`: all them. -->
 - `1:25:19`: yeah i expected so everybody repeated for the for the video **so the offsets are halfed because instead of eight byte words we would have four byte words**.
 - `1:25:32`: and and and and and and of course **this is what...** the assembler are kind of that **the compiler gives or c gives you so you don't have to think about it** and it's probably the most common part in programming is similar to the interface offices.
 <!-- - `1:25:49`: okay. -->
 <!-- - `1:25:52`: think. -->
+- ![new_60](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:25:53_0072.png)
 <!-- - `1:25:54`: that's your saw on top of the slider. -->
 <!-- - `1:25:58`: but i think i said missouri. -->
 <!-- - `1:26:03`: i guess all of this business concept i have to explain but lou will come back to this later. -->
@@ -557,12 +617,15 @@
 - `1:27:14`: he thought my sword **for using as many things in registers**.
 - `1:27:18`: many ancient race histories and and maybe you remember even when when i compiled this without sorry i did something wrong bias or.
 <!-- - `1:27:34`: no it was g a trend as men direction. -->
+- ![new_61](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:27:41_0073.png)
 - `1:27:42`: so **if i compile this then or without optimization** then you **see lot of code** happening here and **and that code and needs to source registers to memory actually to save them there** that are perceived as they are on these take a bunch of extra.
 - **stack pointer gets room for sixty four bit words as you can see here**
+- ![new_62](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:27:46_0075.png)
 <!-- - `1:27:59`: buy are waiting for at least six he thought his words as you can see here **six eighty four divided by six** is. -->
 - `1:28:10`: so you're **forty eight divided by eigty six?** and seven.
 - `1:28:15`: and then here this is saves as things on the stack pointer in an enter **so you kind of saving registers on the stack pointer and like in real memory** this of course bad and so the first **task of the compiler...** is to white this and and kind of **do as much as possible here in registers**.
 <!-- - `1:28:35`: t right there's no temporary you can actually reusing the argument registers which are used anyhow. -->
+- ![new_63](./_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs/new_01:28:35_0074.png)
 <!-- - `1:28:43`: and that's why this is way better and but of course like in principle. -->
 <!-- - `1:28:48`: emphatically if to do this i think the most important compiler optimization trick is to inline functions and if you do this recursively you will get sort of lots of the potential things you can put into registers. -->
 <!-- - `1:29:02`: and then you run out of register space. -->
