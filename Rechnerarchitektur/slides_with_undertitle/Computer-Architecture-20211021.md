@@ -2,6 +2,10 @@
 <!-- /home/areo/Videos/Rechnerarchitektur_old/_computer-architecture-20211021_imgs -->
 <!-- /home/areo/.config/mpv/mpv.conf -->
 [toc]
+# Tags
+techonology trends, ic (integrated circuit), performance (responce time, throughput, mem )
+elapsed time, execution time, cpu clocking (cpu time, clock rate, cpi (cycles per instruction), ic (instruction count)), power, spec cpu benchmark,
+
 # ==============0:00:00==============
 <!-- - `0:00:00`: the. -->
 <!-- - `0:00:04`: alright so do we talking about at first about sedative and memory a little bit and then about like time space and time so let me first show you the and. -->

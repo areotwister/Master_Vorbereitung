@@ -1,6 +1,8 @@
 <!-- /home/areo/Videos/Rechnerarchitektur/Computer-Architecture-2022-10-18.mp4 -->
 <!-- /home/areo/.config/mpv/mpv.conf -->
 [toc]
+# Tags
+classes of computers, history of computers, performance, seven great ideas, kinds of software, levels of program code, inside the processor
 # ==============0:00:00==============
 <!-- - `0:00:00`: the arcade then what has been mister the recording for those who are now listening only recording is an explanation how to access the material and the organization in some more motivation about the touring the work of the authors of. -->
 <!-- - `0:00:20`: the books of his once wardens it into the video this is the book will do you and the village name is the same and sir. -->
