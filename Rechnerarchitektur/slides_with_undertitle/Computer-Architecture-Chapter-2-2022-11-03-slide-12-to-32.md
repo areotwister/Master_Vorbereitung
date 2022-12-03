@@ -2,6 +2,8 @@
 <!-- /home/areo/Videos/Rechnerarchitektur/_Computer-Architecture-Chapter-2-2022-11-03-slide-12-to-32_imgs -->
 <!-- /home/areo/.config/mpv/mpv.conf -->
 [toc]
+# Tags
+immediate operands, unsigned and signed, 2s-complement, signed negation, sign extension, instruction format, pseudo instructions to real instructions, bvi and hexdump,  r-format, i-format, s-format, big picture programs, logical operations (logical and arithmetic shift, and, or, xor), mask bits, conditional operations **🠒** branch to label (beq, bne), compile to riscv 32 or 64 bit, execute riscv with qemu, compiler optimazations (03 **🠒**  avoid branches, hackers delight book), compiling if statement, compiling loop statement
 # ==============0:00:00==============
 <!-- - `0:00:01`: gatwick streaming yes and i'm going to share the scream. -->
 <!-- - `0:00:18`: i guess i'll say i was explaining this emitted instruction here and the. -->

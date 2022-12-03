@@ -2,6 +2,8 @@
 <!-- /home/areo/Videos/Rechnerarchitektur/_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs -->
 <!-- /home/areo/.config/mpv/mpv.conf -->
 [toc]
+# Tags
+basic blocks, less than and gerater equal than branching (more conditional operations), signed and unsigned comparison,
 # ==============0:00:00==============
 <!-- - `0:00:00`: the cape in the brain so i hope the sound is working today. -->
 <!-- - `0:00:12`: for some reason this semester doesn't work stop working and. -->

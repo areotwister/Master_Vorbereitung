@@ -2,6 +2,8 @@
 <!-- /home/areo/Videos/Rechnerarchitektur/_Computer-Architecture-Chapter-2-2022-10-25-slide-01-to-11_imgs -->
 <!-- /home/areo/.config/mpv/mpv.conf -->
 [toc]
+# Tags
+instruction set (is), arithmetic operations, design principles (simplicity favours (regularity, higher performance at lower cost)), (abstract syntax tree, control flow graph), word and double word, registers, pseudo instructions, instruction length encoding, main memory (byte addressable, little and big endian, aligned words), array and offset
 # ==============0:00:00==============
 <!-- - `0:00:00`: the court now. -->
 <!-- - `0:00:04`: okay so today we're going to talk about him at the cemetery and so starting with the chapter two and to going into the. -->

@@ -2,6 +2,7 @@
 <!-- /home/areo/Videos/Rechnerarchitektur/_Computer-Architecture-Exercise-01-2022-10-27_imgs -->
 <!-- /home/areo/.config/mpv/mpv.conf -->
 [toc]
+# Tags
 # ==============0:00:00==============
 <!-- - `0:00:00`: the game. -->
 <!-- - `0:00:07`: it was that nobody was doing the dishes and four people were just watching the recording and just predicting the exercises when the sherry was cream and particularly the ear buds if you are remote you can just punch out. -->

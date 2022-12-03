@@ -3,9 +3,7 @@
 <!-- /home/areo/.config/mpv/mpv.conf -->
 [toc]
 # Tags
-techonology trends, ic (integrated circuit), performance (responce time, throughput, mem )
-elapsed time, execution time, cpu clocking (cpu time, clock rate, cpi (cycles per instruction), ic (instruction count)), power, spec cpu benchmark,
-
+techonology trends, ic (integrated circuit), performance (responce time, throughput, mem), elapsed time, execution time, cpu clocking (cpu time, clock rate, cpi (cycles per instruction), ic (instruction count)), power, spec cpu benchmark, amdahls law, i_7 power benchmark, instruction set architecture (isa), application binary interface (abi), volatile, non-volatile
 # ==============0:00:00==============
 <!-- - `0:00:00`: the. -->
 <!-- - `0:00:04`: alright so do we talking about at first about sedative and memory a little bit and then about like time space and time so let me first show you the and. -->
