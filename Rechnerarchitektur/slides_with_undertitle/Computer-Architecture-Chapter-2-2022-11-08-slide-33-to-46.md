@@ -4,6 +4,7 @@
 [toc]
 # Tags
 basic blocks, less than and gerater equal than branching (more conditional operations), signed and unsigned comparison,
+leaf, automatic variable, reason for calle and caller saved registers, tail recursion optimization
 # ==============0:00:00==============
 <!-- - `0:00:00`: the cape in the brain so i hope the sound is working today. -->
 <!-- - `0:00:12`: for some reason this semester doesn't work stop working and. -->
@@ -120,10 +121,10 @@ basic blocks, less than and gerater equal than branching (more conditional opera
 - ![new_11](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_00:19:54_0004.png)
 - `0:20:08`: and **jump to this procedure labor this is kind of actually a pc relative address** and then puts it in the return address into x one and then as we have seen **if you simply specify for instance x zero here then add this would be...**.
 <!-- - `0:20:28`: and. -->
-- `0:20:30`: and like as **you do need the return address** it trace so it's really just a sort of a chump bitches a call at the same time okay and the alternative here **this is a indirect jump...** and here you take the the register value the the actress which is in 'em in this.
+- `0:20:30`: and like as **you don't need the return address** it trace so it's really just a sort of a chump bitches a call at the same time okay and the alternative here **this is a indirect jump...** and here you take the the register value the **the addess which is in this...**.
 - ![new_12](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_00:20:44_0005.png)
-<!-- - `0:20:50`: register you add an offset like zero and where we are talk about this awesome second wider wide scoop to have his opposites offsets here but in principle you'd take an indirect. -->
-- `0:21:03`: i caught a chump here so you take the actress the next one and then you jump to that end but yeah we saving the return address in this first argument here which in this particularly example weights **x zero right we we don't use it right it's just like thrown away**
+- `0:20:50`: **register** you **add an offset like zero** and where we are talk about this awesome second wider wide scoop to have his opposites offsets here but in principle you'd take an indirect.
+- `0:21:03`: i caught a chump here so you take the actress the next one and then you jump to that end but yeah we **saving the return address in this first argument here which in this particularly example is x zero right we we don't use it right it's just like thrown away**
 - `0:21:21`: so so this concrete urns assembly instruction really just **looks up in x one the address where to jump to**.
 - `0:21:31`: okay **now where's this used...** rate any idea where like em.
 - `0:21:37`: this **is called computed jump...** you're done here you see the term.
@@ -321,7 +322,7 @@ basic blocks, less than and gerater equal than branching (more conditional opera
 - ![new_27](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_00:48:09_0004.png)
 - `0:48:14`: okay and this already explains you're almost to the end here well **at the end you also need to fix the stack pointer here back to it's original value**.
 - ![new_28](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_00:48:21_0003.png)
-- `0:48:26`: by just adding twenty four again **and then do this jump to what you saved here in register x one which was the caller of this function right...** cause it attempts to **jumps to this left example label and puts its own pc into x one**.
+- `0:48:26`: by just adding twenty four again **and then do this jump to what you saved here in register x one which was the caller of this function right...** cause it attempts to **jumps to this leaf example label and puts its own pc into x one**.
 - ![new_29](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_00:48:29_0005.png)
 <!-- - `0:48:46`: so that's why here this is at the end is is a return and as i explained here this is exactly the sort of instruction we have here re. -->
 - ![new_30](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_00:48:55_0017.png)
@@ -359,6 +360,8 @@ basic blocks, less than and gerater equal than branching (more conditional opera
 - ![new_34](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_00:53:20_0009.png)
 <!-- - `0:53:30`: so this as zero is actually the frame pointer. -->
 - `0:53:35`: and if you look here at our cheat sheet you see this is as zero or frame pointer and now going to explain this later why this why this frame pointer is a required actually it's not completely required because **you can actually compile without frame pointer** and i'll i'll show you how you do that you.
+- **an Position $-8(s0)$ ist das alte $s0$**
+- **die Argumente werden mit steigendem Index immer weiter vom alten Framepointer (den Speicherzellen in welchen er gespeichert ist) entfernt gespeichert. Der freie Space wegen dem 32-Byte alignment, wird direkt nach dem alten Frampointer abgespeichert**
 <!-- - `0:53:55`: you just right omit them. -->
 <!-- - `0:54:01`: a frame pointer. -->
 <!-- - `0:54:03`: and then you will see that this thing is missing rate doesn't do anything with this as zero anymore. -->
@@ -366,7 +369,7 @@ basic blocks, less than and gerater equal than branching (more conditional opera
 <!-- - `0:54:15`: oh. -->
 - `0:54:16`: okay so and because of this frame pointer thing actually this as i didn't check i didn't did anybody pay attention we could look at the video later but but i thought they did **there should have been sixty four** re was it was sixty four **because i omitted the frame pointer this is not legal code anymore** this third incense rate like the the you see.
 - ![new_36](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_00:54:34_0011.png)
-- `0:54:35`: the different levels of legal legal code as an end **omitting the frame pointer breaks certain things...** very like the **debugging is for instance not possible anymore** and so **for this debugging you would need to require sixty four** so i didn't pay attention but su nodding so this was sixty four.
+- `0:54:35`: the **different levels of legal code** as an end **omitting the frame pointer breaks certain things...** very like the **debugging is for instance not possible anymore** and so **for this debugging you would need to require sixty four** so i didn't pay attention but su nodding so this was sixty four.
 <!-- - `0:54:53`: but nowadays i don't need to save this the this thing which from yates not on the slights but but otherwise this is almost the same code solve so we could go through this now but but but maybe it's better for you to do you do this or cell-free the checkout you can also delete of course on godwit executive with the way i did sudo need to install it locally but. -->
 # ==============0:55:00==============
 <!-- - `0:55:13`: it's like cool if you can run the risk wife code on your own machine. -->
@@ -487,6 +490,8 @@ basic blocks, less than and gerater equal than branching (more conditional opera
 # ==============1:10:00==============
 - ![new_53](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_01:09:56_0028.png)
 - ![new_54](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_01:10:01_0030.png)
+- **zweiter Stackframe hat niedrigere Adresse als erster**
+- **zweite Variable hat höhere Adresse als erste**
 <!-- - `1:10:02`: right. -->
 <!-- - `1:10:05`: and. -->
 <!-- - `1:10:09`: you see this the pointer would then exactly be here on this or on this one the subsequent a mistake somewhere further down. -->
@@ -586,10 +591,12 @@ basic blocks, less than and gerater equal than branching (more conditional opera
 <!-- - `1:20:41`: then very getting this so a zero right x ten is sir. -->
 <!-- - `1:20:46`: it is sir. -->
 <!-- - `1:20:51`: is the argument in and we're we're villa we're moving into and a five and a denville the loading actually. -->
-- `1:21:02`: if you're setting both a zero and a three here and to the constant one and **we don't need to save anything here because...** this a zero and a three here and you see be saved is you're here in a five and is **a three here is...**.
+- `1:21:02`: if you're setting both a zero and a three here and to the constant one and **we don't need to save anything here because this a zero and a three here...** and you see be saved is you're here in a five and is a three here is.
 <!-- - `1:21:22`: and. -->
 <!-- - `1:21:24`: and this a three here is. -->
 - `1:21:31`: sorry this a three here is **also a temporary so which doesn't need to be saved like all the argument regiersters are tempories** and right and envy have fuel a loop in to do if if this is already one here is a five then we're jumping down at so it is less equally than then.
+- **reason for caller und calle saved registers:**
+  - **damit einen guten Ausgleich an Registern gibt, die vom caller und calle ohne Bedenken verwendet werden können.**
 <!-- - `1:21:51`: i am if a five here is less equal then then is this. -->
 <!-- - `1:21:59`: athens than zero sign trade. -->
 <!-- - `1:22:02`: sorry no i'm not since less equal than one so i'm not mixing up also. -->
@@ -630,6 +637,7 @@ basic blocks, less than and gerater equal than branching (more conditional opera
 - `1:26:40`: what i want to say here arab wonder what is explained here **so this line here this j r air r a is this return right this is this pseudo instruction which just returns from the return address register** and **here we're increasing this stack pointer but need to load back**.
 - ![new_83](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_01:26:51_0060.png)
 - ![new_84](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_01:26:59_0061.png)
+- **man muss z.B. auch den ra pointer speichern, wenn dazwischen ein Funktionsaufruf ist, weil der ra pointer zum Schluss eines Funktionsaufrufs zum zurückspringen gebraucht wird**
 - `1:27:00`: **these registers which we are going to use in the caller** right and this is **in this case is the return address and the frame pointer** return address and frame pointer.
 - `1:27:15`: why did the other one **like this a five year this is a temporary** and this is what you asked for **this one is a completely free to use because you're not going to use it right after the call here you're only going to use a zero, if this a five here would be needed after the call you also need to save it**.
 <!-- - `1:27:34`: disabled that's the point. -->
@@ -646,7 +654,7 @@ basic blocks, less than and gerater equal than branching (more conditional opera
 - ![new_85](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_01:28:56_0062.png)
 - `1:28:57`: all of **which needs to be active after the call that of course you need to save as a caller** but **everything which is not needed which is kind of only used your internally either in this part or in this part, you can temporaries for that**.
 - ![new_86](./_Computer-Architecture-Chapter-2-2022-11-08-slide-33-to-46_imgs/new_01:29:09_0063.png)
-- `1:29:15`: and **of course you run out of stack space like if you have fifty registers (you cannot put them all into this that frame)?, then you need to put them on the stack anyhow**.
+
 - `1:29:29`: okay so so the basic ideas **at the leaf you just want to use as many temporaries as possible because those you just can use, override work with them**.
 - `1:29:38`: **and only those things like which we see her in the background this r a that one the return address needs to be saved**.
 - `1:29:48`: **if you're if you're across this call here because you need to return yourself here**.
