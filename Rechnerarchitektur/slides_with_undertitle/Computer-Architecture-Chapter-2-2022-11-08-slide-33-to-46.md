@@ -3,8 +3,7 @@
 <!-- /home/areo/.config/mpv/mpv.conf -->
 [toc]
 # Tags
-basic blocks, less than and gerater equal than branching (more conditional operations), signed and unsigned comparison,
-leaf, automatic variable, reason for calle and caller saved registers, tail recursion optimization
+basic blocks, less than and gerater equal than branching (more conditional operations), signed and unsigned comparison, procedure calling, jump and link, switch case, leaf procedure, automatic variable, tail recursion optimization, linux vs windows primitive datatype conventions, memory layout, save on stack, stack position in riscv, alloca, temporary registers, deal with non-leaf procedures, function call example, reason for calle and caller saved registers
 # ==============0:00:00==============
 <!-- - `0:00:00`: the cape in the brain so i hope the sound is working today. -->
 <!-- - `0:00:12`: for some reason this semester doesn't work stop working and. -->
