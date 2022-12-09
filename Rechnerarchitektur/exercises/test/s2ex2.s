@@ -10,6 +10,7 @@
   .text
   .globl	main
 main:
+  # TODO: main function braucht auch sd und so...
   ## code start
   # task 2:
   # setup
@@ -17,7 +18,7 @@ main:
   # solution
  call fib
   ## code end
-  li a1,42
+  mv a1,a0
   lla	a0,.LC0
   call	printf@plt
   ld	ra,8(sp)
