@@ -12,16 +12,16 @@
 fib:
   mv a1,a0
   addi	sp,sp,-24
-  sd s0,16(sp)
+  sd ra,16(sp)
+  sd s0,8(sp)
   addi s0,sp,24
+  sd a1,-24(s0)
   li t0,1
   blt t0,a1,.ELSE
   li a0,1
   # j .EXIT
   jal x0,.EXIT
 .ELSE:
-  sd ra,-16(s0)
-  sd a1,-24(s0)
   addi a0,a1,-1
   call fib
   ld a1,-24(s0)
@@ -35,9 +35,9 @@ fib:
   # j .EXIT
   jal x0,.EXIT
 .EXIT:
-  ld s0,-8(s0)
+  ld ra,-8(s0)
+  ld s0,-16(s0)
   addi	sp,sp,24
-
   # ret
   jalr x0,0(ra)
 	.size	fib, .-fib
@@ -51,9 +51,9 @@ main:
   ## code start
   # task 2:
   # setup
- li a0,5
+  li a0,5
   # solution
- call fib
+  call fib
   ## code end
   mv a1,a0
   lla	a0,.LC0
