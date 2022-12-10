@@ -20,13 +20,13 @@ main:
   # addi a0,a0,-273
   # task 3b)
   # setup
-  li a0,1
-  slli a0,a0,31
+  addi a0,zero,-1
+  srli a0,a0,1
   # li a0,12 # toggle
   li a1,-12
   # solution
-  li t0,1
-  slli t0,t0,31
+  addi t0,zero,-1
+  srli t0,t0,1
   bgtu a0,t0,.ELSE
   add a1,zero,a0 # mv a1,a0
   j .EXIT
@@ -34,7 +34,7 @@ main:
     addi a1,zero,-1
 .EXIT:
   ## code end
-  # mv a1,a0 # a)
+  mv a1,a0 # a)
   lla	a0,.LC0
   call	printf@plt
   ld	ra,8(sp)
