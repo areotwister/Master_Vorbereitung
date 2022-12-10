@@ -51,23 +51,31 @@ main:
   ## code start
   # task 2a):
   # # setup
+  # li a0,5
+  # solution
+  # call fib
+  # task 2b):
+  # setup
   li a0,5
   # solution
-  call fib
-  # task 2b):
-  #  # setup
-  #  li t0,1
-  #  li t1,1
-  #  li t2,1
-  #  # solution
-  #  addi sp,sp,-8
-  #  sd s0,0(sp)
-  #  addi s0,sp,8(sp)
-  #  j .WHILE
-  #.WHILE:
-  #.EXIT:
-  #  ld s0,0(sp)
-  #  addi sp,sp,8
+  li t0,1
+  li t1,1
+  li t2,1
+  addi sp,sp,-8
+  sd s0,0(sp)
+  addi s0,sp,8
+.CONDITION:
+  bge t3,a0,.LOOPEXIT
+.LOOP:
+  mv t3,t1
+  add t1,t1,t0
+  mv t0,t3
+  addi t2,t2,1
+  j .CONDITION
+.LOOPEXIT:
+  mv a0,t1
+  ld s0,0(sp)
+  addi sp,sp,8
   ## code end
   mv a1,a0
   lla	a0,.LC0
