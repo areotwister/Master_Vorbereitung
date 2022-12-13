@@ -446,6 +446,9 @@
 # ==============1:05:00==============
 <!-- - `1:05:17`: lol i would not have used it am and but it's now actually quite natural and there's light i'm going to show you in the next light to examples and i want to punt on him particularly hit on you you will see that. -->
 - ![new_55](./_Computer-Architecture-Chapter-2-2022-11-15-slide-47-to-64_imgs/new_01:05:25_0008.png)
+- **atomic swap: swaps memory address saved in x20 with register x23 and uses x10 as messanger**
+- **lock: wenn an der Adresse, die in x20 steht eine 1 steht, dann darf man in den kritischen Bereich**
+- unklar wie Reservierung funktioniert: **wahrscheinlich tut ein zweiter ankommender Prozess keine Reservierung bekommen, wenn es schon reserviert ist und wird dann später bei sc abgelehnt**
 <!-- - `1:05:31`: this is extremely powerful because it allows you to to kind of build all this other concepts of locking of which you are otherwise he was in this also this first and to the atomic swap so this is one of the things you usually implemented so this is kind of sort of the weakest version. -->
 - `1:05:50`: and then unnecessary to implement a synchronization **so what is atomic swap[...]** rates are like your to do you have a memory address and then you want to make sure that and not two people at the same time would swap pink and lakewood right to it in and you can achieve.
 <!-- - `1:06:10`: that by saying okay if if atomic swap for one poll for one thread succeeds then it's guaranteed that nobody else read sort of the old values either regrets the old value and then the atomic swap did not not not work right port it would redeem then your web. -->
@@ -466,8 +469,8 @@
 <!-- - `1:09:04`: address so it's like they're from that ip again twenty said in memories the shreds communicate over memory and. -->
 - `1:09:14`: you want to **make sure that only one thread is in the critical section**.
 - `1:09:19`: **only the thread that has written one to that address is allowed to do something critical the other one has to wait**.
-- `1:09:28`: and although of course if withered **without atomic instructions both threads would read it then write one but they could read it the same time and write it the one time they both think they in the clinical section but they're not writing we need to make sure that only one succeeds in writing the one**.
-- `1:09:48`: **[...]**okay and so so we're first getting here in register twelve and the immediate one rachel vs the thorpe's no constant one.
+- `1:09:28`: and although of course if withered **without atomic instructions both threads would read it then write one but they could read it the same time and write it the one time they both think they in the clinical section but they're not writing we need to make sure that only one succeeds in writing the one[...]**.
+- `1:09:48`: okay and so so we're first getting here in register twelve and the immediate one rachel vs the thorpe's no constant one.
 <!-- - `1:09:57`: and **we need that because in riscv you cannot write an immediate to memory address because the immediate in the store instruction is the offset** the recording. -->
 # ==============1:10:00==============
 <!-- - `1:10:10`: and so that's why we need to first load the constant here and then then clearly loading this value of the semaphore of his global memory address. -->

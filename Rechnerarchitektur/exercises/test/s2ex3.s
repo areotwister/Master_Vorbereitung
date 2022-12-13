@@ -83,3 +83,6 @@ main:
   addi	sp,sp,16
   jr	ra
 	.size	main, .-main
+# task 3d)
+# 0b0000_0000_1111_0111_1000_0111_1001_0011
+# 0x00f78793
