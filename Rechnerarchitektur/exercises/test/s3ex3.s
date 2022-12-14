@@ -1,4 +1,4 @@
-  ; .section	.rodata
+  # .section	.rodata
   .section	.data
   .align	3
 .LC0:
