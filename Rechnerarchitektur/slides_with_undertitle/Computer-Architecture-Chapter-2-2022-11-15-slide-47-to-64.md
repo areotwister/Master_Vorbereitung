@@ -3,6 +3,7 @@
 <!-- /home/areo/.config/mpv/mpv.conf -->
 [toc]
 # Tags
+load store byte halfword word, strcpy, lui 32-bit constants, SB-Format (branch addressing), UJ-Format (jump addressing), addressing summary, synchronization, load reserved and store conditional, program translation and startup
 # ==============0:00:00==============
 <!-- - `0:00:00`: the okay so. -->
 - ![new_1](./_Computer-Architecture-Chapter-2-2022-11-15-slide-47-to-64_imgs/new_00:00:09_0001.png)
