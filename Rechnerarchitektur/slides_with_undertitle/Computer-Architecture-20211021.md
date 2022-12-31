@@ -996,6 +996,8 @@ techonology trends, ic (integrated circuit), performance (responce time, through
 - `1:04:54`: so basically **when you start to have that you have to be careful in counting the number of instructions because if you count the number of instruction**. **we have here five instruction and here we have six instruction but somehow...** this five instruction.
 # ==============1:05:00==============
 - ![new_47](./_computer-architecture-20211021_imgs/new_01:23:16_0006.png)
+- $\eta_S=\frac{T}{t_S+\frac{t_P}{n_P}} \leq \frac{T}{t_S}=\frac{T}{T-t_P}$
+  - $Speedup=\frac{T_{ges}}{t_{unaffected}+\frac{t_{affected}}{improvement factor}} \leq \frac{T_{ges}}{t_{unaffected}}=\frac{T_{ges}}{T_{ges}-t_{affected}}$
 <!-- - `1:05:12`: five instructional mothballs and six instructions that's because it's an instruction was for the losses. -->
 <!-- - `1:05:24`: yes. -->
 <!-- - `1:05:26`: so here you have this simple tradition again in a slightly more complicated funny instead he moved the ball well removing version. -->

@@ -2,6 +2,8 @@
 <!-- /home/areo/Videos/Rechnerarchitektur/_Computer-Architecture-Chapter-2-2022-11-17-slide-65-to-92_imgs -->
 <!-- /home/areo/.config/mpv/mpv.conf -->
 [toc]
+# Tags
+- Java Applications, Effect of Compiler Optimization, Inlining, Arrays vs. Pointers, Examples for Compillerd
 # ==============0:00:00==============
 <!-- - `0:00:00`: the key so on i explained about the linkage last time and and. -->
 <!-- - `0:00:18`: this is is liquid left in this term in this a slight set of chapter two so i'll want to go over that briefly so first of all there is some something if you have an interpreted language which originally was planned as an interpreted language said this one or python then you have another kind of. -->
