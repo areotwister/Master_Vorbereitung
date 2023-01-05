@@ -4,10 +4,8 @@
 [toc]
 # ==============0:00:00==============
 <!-- - `00:00:00`: the air so welcome to earth to the ser lecture on embedded systems. -->
-- ![new_1](./_Lecture9_imgs/new_00:00:02_0001.png)
 <!-- - `00:00:14`: and this time not from the sidewalk. -->
 <!-- - `00:00:19`: but i hope we will nevertheless have a good experience. -->
-- ![new_2](./_Lecture9_imgs/new_00:00:22_0002.png)
 <!-- - `00:00:24`: just the usual organization slide and the lecture next one in the next year so the next lecture the first lecture in twenty twenty three will again be in presence of course with the usual live streaming and recording one on january ten. -->
 <!-- - `00:00:43`: of the exercises we were just proceeds as usual today we will do in the afternoon the solutions of the fourth exercise sheet will really presented so this was material that we discussed last time. -->
 <!-- - `00:00:59`: and today you will go through the solutions of the task that are supposed to understand a little bit deeper than the concepts we we discuss last time. -->
@@ -18,9 +16,7 @@
 <!-- - `00:02:08`: of the semester and we will discuss the solutions if this is really not possible due to time constraints we will release the solutions for the fourth floor for the mock exam for sure. -->
 <!-- - `00:02:20`: but we will try our best to also have a discussion session so you can ask questions related to the mock exam questions. -->
 <!-- - `00:02:29`: alright so let's get started so where are we are we started last time of the chapter on shared resources and we will continue to work on this chapter today and also start the chapter and the next chapters. -->
-- ![new_3](./_Lecture9_imgs/new_00:02:30_0003.png)
 <!-- - `00:02:44`: so just as a shot repetition last time we discussed what happens if tasks need to share resources and these resources have the access to this resource has to be protected protected by critical sections to ensure the consistency of data. -->
-- ![new_4](./_Lecture9_imgs/new_00:02:44_0004.png)
 <!-- - `00:03:04`: fractures variables memory for example. -->
 <!-- - `00:03:07`: and one of the phenomenon we discuss was priority inversion where the highest priority task he and his picture task tower was blocked by a tool lower priority tas taught to hunt or three and imp in particular the blocking time that was introduced by this completely unrelated task to to that. -->
 <!-- - `00:03:27`: was actually not working on the shared shared resource. -->
@@ -29,7 +25,6 @@
 <!-- - `00:03:43`: and in the afternoon. -->
 <!-- - `00:03:46`: he has saw. -->
 <!-- - `00:03:48`: yeah so we discuss protein version and this can lead to unbounded blocking times which is of course not what we would like to have in a real time system. -->
-- ![new_5](./_Lecture9_imgs/new_00:03:54_0001.png)
 <!-- - `00:03:57`: i will not. -->
 <!-- - `00:03:59`: ok thanks i will not be able to to always look at the year at the at the chat in real time just breaks the flow completely. -->
 <!-- - `00:04:10`: now. -->
@@ -39,17 +34,14 @@
 # ==============0:05:00==============
 <!-- - `00:05:06`: cheat by year by some of these protocols. -->
 <!-- - `00:05:10`: and then we closed the last lecture of if you're scheduling or timing anomalies and this just is a one of the slides that we looked at all the examines we looked at that shows that if you have a singular processor and everything is fine you may. -->
-- ![new_6](./_Lecture9_imgs/new_00:05:10_0002.png)
 <!-- - `00:05:29`: all the deadlines of a given task set and your then you speed up the processor you either speed it up or you use a different processor that has twice the speed of the original processor then intuitively one would expect that she will still be able to meet all the deadlines because you're just executing faster but this example is this very soon. -->
 <!-- - `00:05:50`: the sample already showed that this is not true in general this can actually lead to a dead linguist. -->
 <!-- - `00:05:57`: especially or a down when you have shared resources so here this speeding up meant that down some blocking was already introduced here and this would keep this task from working on the shared resource before it's deadline. -->
 <!-- - `00:06:15`: ok saw the the laster subchapter on shared resources so we discussed the idea that tuscan xs xs shared resource and sometimes they need to work on a shared resource in order to communicate so tasks would like to exchange some signal some data some message with each other because they are. -->
-- ![new_7](./_Lecture9_imgs/new_00:06:15_0003.png)
 <!-- - `00:06:35`: yeah dependent on some input data that some other task provides for example so he may have a pipeline of task where one task works on some algorithm and the output will then be given to a different task of different thread that works on the following stage of the overall i either room. -->
 <!-- - `00:06:55`: and this is what we mean with communication between task you can have very simple communication schemes just maybe just a signal raiders could just be a zero or one and you may have something in your in your in your how hardware architecture just a wire that connects to a gps open and yeah you can set this pin. -->
 <!-- - `00:07:15`: higher law in order to communicate between tasks that are running on completely decoupled processes but i told this cookie possible or just a signal zero or one. -->
 <!-- - `00:07:27`: here we actually mean that we have maybe one processor and the processor executes made the tasman the threads at the same time and they would like to exchange data. -->
-- ![new_8](./_Lecture9_imgs/new_00:07:37_0004.png)
 <!-- - `00:07:38`: it would like to exchange a message via a shared shared resource so here we have. -->
 <!-- - `00:07:43`: just a very simple example of tool to task to an untold tool that would like to exchange a message miss mts here by sending a message or putting a message into the shared resource. -->
 <!-- - `00:07:57`: that will then be read out or received by this other task task one can communicate with pastel. -->
@@ -57,7 +49,6 @@
 <!-- - `00:08:26`: time so a task to one should not write a message into the shared resource while the task tool is reading out a message so this could lead to complete garbage. -->
 <!-- - `00:08:36`: and and saw the access to this shared resource that is used for passing the message must also be protected by a critical sections which again leads to the problem of priority inversion or can lead to the problem of the origin version and unbounded blocking as as stated here. -->
 <!-- - `00:08:54`: and this is of course what we would like to avoid and people have worked on and on concepts to do this and the other the we will not go much into into the details here you just should understand the basic principles and the basic two models are called synchronous and asynchronous communication. -->
-- ![new_9](./_Lecture9_imgs/new_00:09:13_0005.png)
 <!-- - `00:09:14`: the synchronous one as the as the name already says means that the two tasks that would like to exchange a message have to wait for each other so they have to be synchronized they have to they have to both and at the same time be ready to send the message. -->
 <!-- - `00:09:34`: ej and the other task needs to be ready to receive the message this is what is usually called the synchronization is called a rendezvous so they have to find each other in time and be ready at the same time. -->
 <!-- - `00:09:49`: and of course if one task starts earlier to send or receive a message then it needs to wait for for the other task that joins later so this is explained here rachel if for example the descending task starts first it cannot send the message right away it needs to wait until the other task. -->
@@ -70,7 +61,6 @@
 <!-- - `00:11:27`: and this is especially a disadvantage because it is very difficult in a dynamic real time system when you don't know when these tasks are actually arriving or when they become ready to execute it is very hard to actually estimate the maximum blocking time due to this the synchronous communication so how much. -->
 <!-- - `00:11:48`: must one task wait for the other at most and and if we had such an upper bound one could take this into account in the aba scheduling and it becomes manageable but since this is very hard to estimate or actually come up within the guaranteed bound. -->
 <!-- - `00:12:05`: this is this is a major problem. -->
-- ![new_10](./_Lecture9_imgs/new_00:12:08_0006.png)
 <!-- - `00:12:09`: there are people have looked at the asynchronous communication and as the name says that basically means that the two status no longer have to wait for each other right. -->
 <!-- - `00:12:18`: in the ideal ideal scenario and this very much depends on how the shared shared resource actually implemented so what kind of data structure or strategies used but in principle it is possible to completely decouple the the tortoise and the sender can can as it's written near the sending task and can. -->
 <!-- - `00:12:38`: write a message into the shared resource and then just go on with it's own business it just writes a message into the shared shared resource and then continuous vivid spirits execution. -->
@@ -84,7 +74,6 @@
 <!-- - `00:14:20`: things and just in such a way that that task don't have to wait for each other and so on. -->
 <!-- - `00:14:27`: or that you know what is the maximum waiting time just by looking at the schedule that you that you computed but if tas can arrive youtube in an event from the environment you'll know when this happens. -->
 <!-- - `00:14:39`: yeah this asynchronous communication is is what you would like to use. -->
-- ![new_11](./_Lecture9_imgs/new_00:14:43_0007.png)
 <!-- - `00:14:44`: and the the typical weigh ins will be will now look at tool simple ways or amsterdam two x ways one can how one could implement the the schatz this shared resource in one of the traditional ways is basically a cure is also sometimes called a mailbox so just yet. -->
 # ==============0:15:00==============
 <!-- - `00:15:04`: does this descending task and this is the receiving task you have in the middle you haven't have a queue or mailbox and this is the the the the top of the queue and this is the the the the end of the job. -->
@@ -98,7 +87,6 @@
 <!-- - `00:16:40`: brian saw what what happens if the cure is is empty and the receiving task would like to receive all and extract the message of course it cannot extract any message because the cure is currently empty thought it will have to and will have to. -->
 <!-- - `00:16:58`: goal from from from the running state into the blocks skate state and if it needs to wait until until actually some message is inside the cube before it can continue right so it cannot receive analyst as actually a message in the queue the same happens if the sending tasks would like to insert a message and accuse for. -->
 <!-- - `00:17:19`: that also needs to go to the blocking state and needs to wait until there's again space in the queue to insert a message so there you still have gotten bottle times in one elegant way to avoid this is to essentially year so it's it has a very cyclic asynchronous buffer and so. -->
-- ![new_12](./_Lecture9_imgs/new_00:17:30_0001.png)
 <!-- - `00:17:39`: slightly sort of i dunno misleading name if you want but the main idea behind this data structure is yours you also have some some kind of queue but you always make sure that that there's at least one message in the queue i saw so the last message that you inserted in into the cure. -->
 <!-- - `00:17:58`: is is actually still in the queue even though some task has read that message already saw you always make sure that there's some some message in the queue so the receiving task can always read out a message. -->
 <!-- - `00:18:12`: and when it reads out it doesn't actually remove the message. -->
@@ -126,13 +114,11 @@
 <!-- - `00:22:37`: it only it it it it overrides if no other task is currently working on on the message on this buffer otherwise as if some other task is already working on the messes like reading it it out it needs to create and another bathroom and saw the current messages. -->
 <!-- - `00:22:56`: not not over it. -->
 <!-- - `00:22:59`: ok saw that this is justin just an example of this could look like in in in free autos let's quickly go through this all year to task and as a q. -->
-- ![new_13](./_Lecture9_imgs/new_00:23:00_0002.png)
 <!-- - `00:23:12`: that has space four or five integers here and it has i think first infested semantic so if task array inserts and ten in the two cured put at the head of the cure then twenty and then task b the receiving task and can receive or read out the message and. -->
 <!-- - `00:23:31`: once it extracts or removes so this is not to see a beat this is a non q and if it's once task b has received and and. -->
 <!-- - `00:23:43`: the the the message on the integer at the top of the queue. -->
 <!-- - `00:23:48`: so yeah so why then has the value of ten after executing the receive operation as it is indicated here that the that twenty actually moves to the top of the solid stone was actually really removed from the queue saw in free autos as far as i know there's no implementation of the sierra. -->
 <!-- - `00:24:07`: b they only have him havoc you. -->
-- ![new_14](./_Lecture9_imgs/new_00:24:08_0003.png)
 <!-- - `00:24:10`: huh mechanism and to communicate between tasks you can create the cure of course with a good length and so these are the number of items in the queue and the size of each item as the second parameter that you have to specify when you create a queue. -->
 <!-- - `00:24:26`: and then you can send or put the message into the queue. -->
 <!-- - `00:24:30`: i jar by just providing appointed to the data the the handle to the queue and here there's a sort of this is the last parameter interesting parameter specifies some of the maximum time this task the sending tas will actually be blocked so this makes sure that there's no unbounded blocking time. -->
@@ -140,9 +126,7 @@
 # ==============0:25:00==============
 <!-- - `00:25:11`: it will. -->
 <!-- - `00:25:12`: returned it it was not able to insert the message into the queue same for for the receiving side you can specify the maximum time to. -->
-- ![new_15](./_Lecture9_imgs/new_00:25:17_0004.png)
 <!-- - `00:25:23`: yeah and then here there's just so just the final example with three tasks so this there are two sending to us that have equal priority. -->
-- ![new_16](./_Lecture9_imgs/new_00:25:25_0005.png)
 <!-- - `00:25:36`: and there's one receiving task it has a higher priority to. -->
 <!-- - `00:25:41`: and this is sort of the room when you look at the architecture of this piece of software so we have to was sending to us that are inserting message into the queue and one receiving task and this receiving task has the highest bounty. -->
 <!-- - `00:25:55`: and at the beginning of the execution this receiving task of course since it has the highest priority it executes first and then it tries to read out the message from the queue but the queue is still empty though there are currently no messages energy and therefore the process a random lease or does this time slice scheduling it's what gives you the equal. -->
@@ -152,13 +136,9 @@
 <!-- - `00:26:53`: which of course doesn't work because the queue was again empty now as synonyms and no one gets the processor inserts a message which is then read out and so on so they are taking so this is just one example of how this would this would look like and as you can see here you have some some blocking time here and you can specify. -->
 <!-- - `00:27:14`: upper bounds on this block unkind time in case there would be no other no sending task ready to to put a message in and to unblock the resilient task. -->
 <!-- - `00:27:27`: okay so this was this concludes the chapter on unshared shared resources and all and you may or you may easily see that we are not earth or after seven usually it comes comes eight. -->
-- ![new_17](./_Lecture9_imgs/new_00:27:32_0006.png)
-- ![new_18](./_Lecture9_imgs/new_00:27:33_0007.png)
 <!-- - `00:27:41`: i decided to switch the order and gome have the power and energy in order to keep aligned with the exercises as much as possible and we already talked about hardware components and and if we still have time we will talk about other components at the very end. -->
 <!-- - `00:28:01`: of the election so that just in your own interest to keep keep in synchrony with with with the exercises so as you can see and synchronization creates dependencies between different task and one task is the lecturer and the other task is the are the exercise. -->
 <!-- - `00:28:20`: okay so some general remarks so why do we care powered by power and energy consumption in in in any computing system nowadays but in particular in embedded systems and i mean there are many reasons and the whole issue of saving energy and reducing peak power is. -->
-- ![new_19](./_Lecture9_imgs/new_00:28:20_0008.png)
-- ![new_20](./_Lecture9_imgs/new_00:28:21_0009.png)
 <!-- - `00:28:40`: it's becoming more and more important just due to the evolution of technology and here listed are some various specific reasons so one of them is just provisioning or making energy available and delivering power is is expensive so just think about the the overhead of replacing a battery. -->
 <!-- - `00:28:59`: recycling a battery. -->
 <!-- - `00:29:02`: oh dear how tedious it is for you to always recharge your smartphone. -->
@@ -176,7 +156,6 @@
 <!-- - `00:31:50`: and there's a lot of research also going on in this area but still the amount of energy that you can extract is is usually very very limited. -->
 <!-- - `00:31:59`: it depends on on on the frequency of these vibrations how well the harvester is tuned with the vibration spectrum of of of the system of a human for example when you are walking and so on and so forth so there it is very limited and therefore of course you would like to use. -->
 <!-- - `00:32:20`: the energy that you were able to harvest you would like to use this energy as efficiently as possible. -->
-- ![new_21](./_Lecture9_imgs/new_00:32:28_0010.png)
 <!-- - `00:32:30`: yeah this is just dumb. -->
 <!-- - `00:32:32`: just the plot to me also illustrates the issue so you can see here a plot soaring over time so does this does this time i mean we are now a little bit further here but so i think it goes up to twenty seventeen but the general trends to the horse so you can see that the overtime the. -->
 <!-- - `00:32:52`: here though the total number of active elements in your cpu that can actually do some processing keeps increasing so this is like the number of processors keeps increasing but if you look here now at the at the green dots you will see that that the frequency at which the the processor sir operating. -->
@@ -191,7 +170,6 @@
 # ==============0:35:00==============
 <!-- - `00:35:13`: so by by using more processing elements in parallel you can reduce the overall energy consumption for a given task such as processing one thousand pictures but you still can do this within the same time. -->
 <!-- - `00:35:29`: okay so what are the what are the of the implementation choices and the tradeoff between flexibility of what you can do with a with a computing architecture and and it's energy efficiency and performance or yeah and this this is illustrated here on the slide-in. -->
-- ![new_22](./_Lecture9_imgs/new_00:35:29_0011.png)
 <!-- - `00:35:46`: and let us first look at the at the extreme so if you're just use like a general purpose cpu in your laptop. -->
 <!-- - `00:35:55`: this year at the top and on this you would essentially implement everything in software and you can essentially implement any given either room that you would like to execute you can implement this and suffer on on this general purpose processing. -->
 <!-- - `00:36:14`: the other extreme would be to do everything in hardware so this is here at the bottom so you design a very specific circuit. -->
@@ -208,7 +186,6 @@
 <!-- - `00:38:47`: right and then usually what you have in a in a in a real architecture today you usually have a combination of of these of these different elements or sometimes you have a dedicated circuit for a very specific task to this very efficiently usually have also a general purpose cpu of orchestration. -->
 <!-- - `00:39:06`: as for management things for actually running the operating system dsp is also very common to do warrior image processing key generation random number generation all of this is sort of jar it's an interplay between hardware and software. -->
 <!-- - `00:39:23`: alright so this is another plot that that essentially is illustrates what we have shown here in a bit more abstract way with some concrete some concrete numbers again apologize and this is all a plot but if sometimes is not so easy to find in your plot that that shows such a nice and. -->
-- ![new_23](./_Lecture9_imgs/new_00:39:24_0013.png)
 <!-- - `00:39:41`: you applaud that shows what i'm actually trying to to to tell you here so here you have a half overtime. -->
 <!-- - `00:39:51`: this is overtime and here on the y axis we have and have a metric that's the number of zones in the billions of of of operations produit so there's an energy efficiency metric and you would like to that the overtime of course you would like the energy efficiency increases. -->
 # ==============0:40:00==============
@@ -218,8 +195,6 @@
 <!-- - `00:41:09`: lies your hotmail architecture for for what you need. -->
 <!-- - `00:41:14`: your exploit parallelism to reduce energy and power depending on your application needs you can turn off components very effective way heterogeneity end of course as we will discuss today bludgeon frequency skin. -->
 <!-- - `00:41:29`: ok so let some dive a little bit deeper into power and energy and before going and going too deep let's let's start with something that that i hopefully many of you already know are still remember but since it's still very often confused also in the in the law. -->
-- ![new_24](./_Lecture9_imgs/new_00:41:31_0014.png)
-- ![new_25](./_Lecture9_imgs/new_00:41:32_0015.png)
 <!-- - `00:41:47`: literature i'm i'm starting with with the basic here so you know that power is is the product of voltage and and current and and. -->
 <!-- - `00:41:59`: you can measure the power at a specific point in time so overtime here for example at at a specific point in time let's say here you measure a given given given path so power is the product of voltage and current and it is it is the value so it's the product of these two values at a given point in time. -->
 <!-- - `00:42:20`: therefore auto power is an instantaneous quantity. -->
@@ -232,7 +207,6 @@
 <!-- - `00:44:00`: the value is only meaningful if you save for what you actually consumed or for what you needed this this amount of energy and then you can compare right so i needed a one hundred jewel to finish the given task and you needed one hundred and two jewels to finish the same task then you can. -->
 <!-- - `00:44:19`: compare. -->
 <!-- - `00:44:21`: so it's always important is as written here that you will provide the context for what you actually need need the energy so let's assume that we are running at a certain speed the process runs at a certain speed and of course there's always holds. -->
-- ![new_26](./_Lecture9_imgs/new_00:44:26_0016.png)
 <!-- - `00:44:37`: and we need a certain energy to finish the task so now if you if you speed up the processor let's say you are running with a higher frequency than this mayor. -->
 <!-- - `00:44:50`: yeah this leads to a shorter shorter execution time saw the due till you finish the task earlier. -->
 <!-- - `00:44:59`: and this means that you'll actually use less energy right. -->
@@ -244,7 +218,6 @@
 <!-- - `00:45:52`: the that you'll save energy. -->
 <!-- - `00:45:56`: because you have this connection between the operating frequency of the processor and the the voltage and that the supply voltage that needs to being applied. -->
 <!-- - `00:46:11`: okay i nevertheless do. -->
-- ![new_27](./_Lecture9_imgs/new_00:46:12_0017.png)
 <!-- - `00:46:15`: i mean this is interconnection so you have this connection between propellant and energy wire this formula but both it is important with the skin distinguish between power and energy because it impacts the system design in different ways so different aspects of the system design. -->
 <!-- - `00:46:32`: and so some of them are related to power and some of them are related to to energy for example the design of the power supply and why the regulators also the the virus that are used to connect the battery like the power supply of the hardware components this very much depends on on the power consumption or power draw so i will keep using polygon. -->
 <!-- - `00:46:52`: assumption even though i intellect saw at these. -->
@@ -256,7 +229,6 @@
 <!-- - `00:48:15`: these all these aspects are related not to power it's it's mostly or primarily related to energy consumption. -->
 <!-- - `00:48:24`: okay so this is susan this is some general and context so let's do. -->
 <!-- - `00:48:31`: let's go a little bit deeper here and and ok we will not go to the but just for you to have some understanding of what follows let's look at where where is actually the power going so where do we actually lose power in in our in our system and they are one can. -->
-- ![new_28](./_Lecture9_imgs/new_00:48:32_0001.png)
 <!-- - `00:48:51`: distinguish between dynamic aspects or dynamic losses and static static losses. -->
 <!-- - `00:48:59`: and here that is just a simple simple seamless skaters an inverter or saw you apply a certain input and the output is then the inverse of of the given input and these are two transistors here and there are two sources of dynamic and losses and on the next slide there they are summarized. -->
 <!-- - `00:49:19`: but here's sullivan and a picture that illustrates where where where this is coming from so one of them is saw if if you switch switch the input so you just change the state of the inverter because you're doing some computations this relates to changes to switches in the input is of course also switches the output in one can. -->
@@ -271,7 +243,6 @@
 <!-- - `00:51:28`: as some some there are some leakage occurrence and you don't have to remember all of them so there's this small gate was called gate oxide leakage there's a small current flowing here there's autism so even if the switch year is close there some sub fresh old a leakage that is flowing here and there's also some juncture current so there are. -->
 <!-- - `00:51:48`: three different major leakage currents that are the are losses even when this system is yeah not not not not actually operating. -->
 <!-- - `00:52:00`: so and this is summarized here when i just said the two major sources of dynamic power power losses or power consumption the charging this of the capacitances the short circuit and these other the three different. -->
-- ![new_29](./_Lecture9_imgs/new_00:52:01_0002.png)
 <!-- - `00:52:16`: leakage currents. -->
 <!-- - `00:52:19`: and this leakage so them the purpose of the slate is to show that that this the steady power numbers is actually becoming pretty important so if you look over the years we know that the technology became smaller and smaller so it essentially means that the gate length. -->
 <!-- - `00:52:36`: and the gate length is is. -->
@@ -279,24 +250,17 @@
 <!-- - `00:52:59`: function current so soft fresh and injunction leakage currents are actually increasing which leads to a higher static loss compared to two earlier processes. -->
 <!-- - `00:53:11`: yeah. -->
 <!-- - `00:53:13`: ok so we will only discuss one one way to reduce static power so aesthetic power was yeah we have all these currency of knowing these leakage currents when when the gators actually connected to to power but it's not actually used so it's connect to power but it's it's not your solid sorry it's a very obvious way then ok. -->
-- ![new_30](./_Lecture9_imgs/new_00:53:13_0003.png)
-- ![new_31](./_Lecture9_imgs/new_00:53:23_0004.png)
-- ![new_32](./_Lecture9_imgs/new_00:53:30_0005.png)
 <!-- - `00:53:32`: if i don't need this specific copper component why not just turn it off red saw you'd just remove the power and this is called a palace a powerplay a gay things or you remove it remove the power supply temporary literally when it's component is not is not needed and this is actually being done. -->
 <!-- - `00:53:52`: on on on on these my controller so we already discussed about low power modes lpn zero epi and one and these low-power modes essentially. -->
 <!-- - `00:54:04`: correspond to different configurations in which different hardware components are on and summer off and the lower the low power mode the more of these harbor components actually switched off to reduce the. -->
 <!-- - `00:54:22`: reduce power and therefore the the energy consumption of of the damage. -->
 <!-- - `00:54:28`: yeah so this is this is essentially the the most effective way to and to avoid leakage. -->
-- ![new_33](./_Lecture9_imgs/new_00:54:36_0006.png)
 <!-- - `00:54:37`: to reduce that dynamic power we need to go a little bit. -->
-- ![new_34](./_Lecture9_imgs/new_00:54:39_0007.png)
 <!-- - `00:54:42`: we need to understand instead of the main relationships here and don't be scared i chose the simplest model possible and that still contains the main dependencies. -->
 <!-- - `00:54:57`: so and here we will now ignore any any static static leakage so in an aesthetic or losses so there is no leakage we only look at at the. -->
 # ==============0:55:00==============
 <!-- - `00:55:09`: and the power consumption of a cmos grade when it is dynamically operating so there are switching activities going on and the simplest model that you can think of is that the that the poem the instantaneous power draw of of of the circuit. -->
 <!-- - `00:55:27`: is proportional to to this load capacitance so what is low capacitance this was this one year now so just due to the the wiring between the gates and the input capacitances there's a certain load capacitance that is essentially constant once you have have the layout of. -->
-- ![new_35](./_Lecture9_imgs/new_00:55:34_0008.png)
-- ![new_36](./_Lecture9_imgs/new_00:55:42_0009.png)
 <!-- - `00:55:47`: of your circuit. -->
 <!-- - `00:55:50`: so the power is proportionate to this a lot capacitance is proportional to the square of the supply leverage which will be our main and turning up in in the following. -->
 <!-- - `00:56:03`: it's also proportionate to the operating frequency so that that's the clock frequency and there's also this this over here and i find the times times the clock frequency is something like ok how much switching is actually going on in the gate so if if i if i is is one so one times a. -->
@@ -321,7 +285,6 @@
 <!-- - `01:00:20`: indefinitely so therefore you have this very jar it's not really a direct connection but yet you have this you have this into place or you cannot you cannot reduce the voltage without reducing the frequency or you cannot so when you increase the voltage you can also increase the frequency and this is again relay. -->
 <!-- - `01:00:41`: i this expression you to the pa. -->
 <!-- - `01:00:46`: okay so this is just a summary of what peters said though this is power related to the formula that we have already seen yet. -->
-- ![new_37](./_Lecture9_imgs/new_01:00:47_0010.png)
 <!-- - `01:00:57`: and oh yeah if you just multiply this by the time that you need to execute a given task then you get the energy that that is needed to execute a given task. -->
 <!-- - `01:01:07`: and one can sort of slightly and. -->
 <!-- - `01:01:11`: rearrange this formula and so if this is the number of cyclists the number of operating cycles that is needed by your either of you have implemented then either riven like a sorting algorithm or whatever and it has and executes for a given number of cyclists then then this term in in front here is the energy that. -->
@@ -332,10 +295,7 @@
 <!-- - `01:01:46`: as the supply voltage low capacitance i mean you couldn't try to reduce by rearranging things in your circuit but usually this is this is constant and once you have optimized your algorithm and it really needs the minimal number of cycles also the number of cyclists as a sort of desert certain lower bounce or so the main main tuning. -->
 <!-- - `01:02:06`: not that you half in order to reduce the power and the energy consumption is is essentially either the supply voltage. -->
 <!-- - `01:02:14`: and we will now look at look at two or two static forms off of reducing power and energy by exploiting parallelism and pipelining so we have now seen the these major relations and now he looks okay how can we reduce power and energy on how can we reduce energy. -->
-- ![new_38](./_Lecture9_imgs/new_01:02:15_0012.png)
-- ![new_39](./_Lecture9_imgs/new_01:02:26_0013.png)
 <!-- - `01:02:34`: consumption by exploiting this this relationship here. -->
-- ![new_40](./_Lecture9_imgs/new_01:02:41_0014.png)
 <!-- - `01:02:42`: so let's so this this looks rather simple but it's it's actually not not that not as simple if you think about it for the first time but i will try to explain it as best as i can so let's let's assume you haven't had a single single processing element. -->
 <!-- - `01:02:58`: and yet some processing element and that is processing an input inputstream so each arrow is some picture for example and this is an image processing algorithm that runs an accident on a certain processing element. -->
 <!-- - `01:03:16`: and this is the output and this uh this processing element has a supply voltage of midi d'un operates as at a certain frequency and maximum frequency. -->
@@ -368,7 +328,6 @@ v=1
 <!-- - `01:07:20`: and then we exploit parallelism to achieve the same performance at. -->
 <!-- - `01:07:25`: a much lower energy consumption. -->
 <!-- - `01:07:31`: okay and the same can be can be done with pipelining so here we had things in parallel now let's say we have our algorithm can be divided in and can be partitioned in two stages so there's a first stage of the algorithm that does now. -->
-- ![new_41](./_Lecture9_imgs/new_01:07:32_0015.png)
 <!-- - `01:07:48`: or something. -->
 <!-- - `01:07:50`: and then there's a second stage of the owing room and we can have now one processing element that only takes care of the first half of the either rhythm and a second processing element that that takes care of the second half of the argument. -->
 <!-- - `01:08:07`: and again we operate both of these elements are only half the voltage therefore half the frequency and so they are they are slower and they need to double the time and once this one he produces an output desert memory is there some storage element tool to store. -->
@@ -379,30 +338,22 @@ v=1
 <!-- - `01:09:24`: one eighth of the energy that is needed here for for a picture but of course it has two stages or one eighth plus one eighth is one fourth so again we have one fourth of the energy that is needed overall for every single picture and again we get the same. -->
 <!-- - `01:09:44`: execution rate the same output rate here as we got here so it's exactly the same story im of parallelism and pipelining and yeah if you are a little bit aware of what's going on in in the literature you know that this is actually exploited in many processes saw there's something that is called very. -->
 # ==============1:10:00==============
-- ![new_42](./_Lecture9_imgs/new_01:09:57_0016.png)
 <!-- - `01:10:04`: long instruction bit architectures where the compiler at compile time offline. -->
 <!-- - `01:10:10`: checks which kind of instructions can be executed in parallel if this is supported by the underlying hardware of course and if that's the case then yeah you give each instruction to a different hunt by unit. -->
-- ![new_43](./_Lecture9_imgs/new_01:10:23_0017.png)
 <!-- - `01:10:24`: exactly what is shown here and then these instructions can be executed in parallel. -->
-- ![new_44](./_Lecture9_imgs/new_01:10:26_0018.png)
 <!-- - `01:10:31`: and of course you also have pipelining saw does this yeah pipelining is so there's just a picture of a of a of them the architecture of an old galaxy s aid. -->
-- ![new_45](./_Lecture9_imgs/new_01:10:32_0019.png)
 <!-- - `01:10:46`: if the federal genie of the heterogeneity in this architectural d piece dedicated units for four graphics for the modem some general purpose cpu for me for audio when if you just zoom in here at this hexagon you will have care of the units so you have an instruction cache and then you can. -->
 <!-- - `01:11:06`: execute instructions in parallel by giving them to these have four units and you also have ya and here. -->
 <!-- - `01:11:14`: deeply pipelines or vectorized or pipelined execution stages here. -->
 <!-- - `01:11:21`: as your mayor i hope know from computer architecture and analytics okay so in practice both parallelism and pipelining is is exploited and the main idea is not only to increase performance but sometimes actually to achieve the same performance at a much lower energy consumption. -->
 <!-- - `01:11:41`: so these were forms of aesthetically retreat decreasing the voltage and the frequency to decrease energy consumption. -->
-- ![new_46](./_Lecture9_imgs/new_01:11:42_0020.png)
 <!-- - `01:11:51`: by changing the hardware architecture so that's why i am writing you it's sort of aesthetic way it's not not something that happens at runtime. -->
 <!-- - `01:12:01`: next now we will talk about strategies when you adapt something at runtime i saw you are on. -->
 <!-- - `01:12:10`: you are operating the system and dynamically at runtime you would like to change the the supply voltage and the frequency remember the title and interconnected in order to minimize minimize energy consumption. -->
-- ![new_47](./_Lecture9_imgs/new_01:12:24_0021.png)
 <!-- - `01:12:26`: and yeah this is called dynamic biology and frequency scaling and does is also being done in your laptop and and autism and embedded systems and yeah this just a summary of of the formulas that we you have already seen and so i guess i don't need to repeat this. -->
 <!-- - `01:12:43`: and again applaud the chose that when you increase the supply voltage the energy consumption per cycle to this the energy consumption per cycle year increases gret quite dramatically so increase the supply voltage the energy consumption per second increases quite radically. -->
-- ![new_48](./_Lecture9_imgs/new_01:12:43_0022.png)
 <!-- - `01:13:05`: and the operating frequency increases linearly because we have these two relations we have discussed before. -->
 <!-- - `01:13:14`: okay so now now let's let's say we have have a given given task let's go yet so we'll all go through a fruit for an example tool to illustrate something and the the goal is that you have a given task. -->
-- ![new_49](./_Lecture9_imgs/new_01:13:14_0023.png)
 <!-- - `01:13:30`: some image puzzling task and this tasker needs to be done within a certain time so we have a deadline essentially so we have a relative deadline and. -->
 <!-- - `01:13:44`: to make things concrete to these are carefully chosen numbers just saw that things are more easy to calculate and also for you to understand so let's suppose that we have a task that needs to tend to the power of nine swords neap nine billion nine billion cycles. -->
 <!-- - `01:14:02`: and it needs to finish within twenty five seconds so it's a rather relaxed deadlines or here deadline twenty five seconds. -->
@@ -421,7 +372,6 @@ v=1
 <!-- - `01:16:36`: yeah not really this is just warrior this is this is because this is in natural disasters tend to the power of man just to get to the proper unit so this is the number of cycles times the energy per cycle in the manager and nano is ten to the power of mine is nine so therefore overall the energy that. -->
 <!-- - `01:16:54`: you need if you when you try to finish a task as early as possible and then to go go into a zero energy mode is footage on. -->
 <!-- - `01:17:04`: so the second strategy we might try it is is the following do your you try to do something. -->
-- ![new_50](./_Lecture9_imgs/new_01:17:04_0024.png)
 <!-- - `01:17:14`: and afterwards your operates the processor at the lowest possible frequency so i mean here we finished earlier why not just finish things right on time and you're you're trying to use two different voltages the maximum voltage in the beginning and then. -->
 <!-- - `01:17:35`: just when it is when when they are still just sufficient time to do the rest at the minimum frequency that the minimum voltage you use switch to the second fudge. -->
 <!-- - `01:17:47`: so and if you're doing all the calculations saw you will have to do around seven hundred fifteen million cycles at the at the highest wattage. -->
@@ -436,11 +386,9 @@ num_cycles(f=25, t=10) ❯ 250
 ```
 <!-- - `01:18:12`: so is this already optima. -->
 <!-- - `01:18:15`: well it is not optimal i saw do the best strategy actually is to choose an intermediate voltage. -->
-- ![new_51](./_Lecture9_imgs/new_01:18:16_0001.png)
 <!-- - `01:18:23`: this the only voltage that is left is is four so you could could have guessed set of four for this example how does how the story goes but here too just to prove or see that is actually true for this simplified example if you operate execute the entire task. -->
 <!-- - `01:18:44`: the ten minute billion cycles at the intermediate voltage then you get the minimum energy consumption. -->
 <!-- - `01:18:52`: so it seems like it is not good to switch between watch why touches unnecessarily well so if you have a given task it it's seems that as it is always best to keep at an at an intermediate medium wattage to minimize the switching between what. -->
-- ![new_52](./_Lecture9_imgs/new_01:19:13_0002.png)
 <!-- - `01:19:14`: and yeah one can actually do like go general and proof or and. -->
 <!-- - `01:19:21`: explanation of why why why this is true so when you look here this at the at the first case and which we are already saw in the example you operate at some voltage x two this is the supply voltage does it's time you operate for some time at a given by the checks and then you switch to. -->
 <!-- - `01:19:41`: or another wattage. -->
@@ -451,7 +399,6 @@ num_cycles(f=25, t=10) ❯ 250
 # ==============1:20:00==============
 <!-- - `01:20:01`: the fraction of time that you execute at this voltage at this power plus the fraction of time that you executed at. -->
 <!-- - `01:20:11`: the the other voltage of a power so that's it exactly this exp expression here so this gives you the overall energy consumption when you do this such an execution profile. -->
-- ![new_53](./_Lecture9_imgs/new_01:20:23_0003.png)
 <!-- - `01:20:24`: the other case we already know that this is optimal but we would like to convince ourselves that this is this is really optimal and under which conditions this is this is optima and you are we choose not to switch but choose an intermediate volume and what is this intermediate voltage year so what does this intermediate voltage what. -->
 <!-- - `01:20:43`: what shall be pickier. -->
 <!-- - `01:20:45`: and the the basic idea is i mean we would like to compare energy consumption as we would like to compare the end of this case and this this case here in this only makes sense when we compare the execution of the same task. -->
@@ -460,14 +407,12 @@ num_cycles(f=25, t=10) ❯ 250
 <!-- - `01:21:24`: of execution seconds for the same algorithm to execute. -->
 <!-- - `01:21:28`: so this essentially means that the that the area here below so the number of cycles is related to the this actually ensures that that the number of cycles is as to the number of cycles needs to be the same and therefore odds of the area here below needs to be the same. -->
 <!-- - `01:21:48`: so this is a shown here so okay so this year the left side here is it's the intermediate voltage so it's this this area below this curfew so this intermediate voltage times the length of his intima. -->
-- ![new_54](./_Lecture9_imgs/new_01:21:48_0004.png)
 <!-- - `01:22:05`: and this needs to be equal to the to the cycles that we execute at the other two voltage in overall so it's the number of secrets executed here and the numbers executed here. -->
 <!-- - `01:22:17`: so we have this sort of equation and then can by dividing by t we get to z so as is z is our intermediate voltage. -->
 <!-- - `01:22:29`: which allows us to finish the same so remember voltages related to frequency. -->
 <!-- - `01:22:36`: frequency of course means how many cycles you can execute for per time unit weight and therefore by doing this calculation we ensure that by this time t we have executed actually so we were actually able to. -->
 <!-- - `01:22:51`: operate the processor at such a voltage and therefore at such a speed that we they'd be finished the same number of seconds and this time chin and then this comparison is actually fair we are comparing oranges and oranges not apples and oranges. -->
 <!-- - `01:23:09`: okay so so we have this formula here where's my point so here so here we have this this formula for case a and we have this formula for case b with the given intermediate voltage. -->
-- ![new_55](./_Lecture9_imgs/new_01:23:22_0007.png)
 <!-- - `01:23:23`: now if you're if you look at. -->
 <!-- - `01:23:25`: at this plaza so this is the the the dynamic of power and so does the average power consumption depending on the supply voltage and now if this power function as usual used this power function is a convex function saw the power increases crit radically with. -->
 <!-- - `01:23:46`: with the supply voltage as we have seen before so it's it's a convex function and because it is economix function using this intermediate voltage which leads to this point here is always better than operating. -->
@@ -475,7 +420,6 @@ num_cycles(f=25, t=10) ❯ 250
 <!-- - `01:24:05`: voltage in between. -->
 <!-- - `01:24:08`: if the power functional appear concave like this then it will be the other way around. -->
 <!-- - `01:24:16`: so as long as the the dynamic power is a is a convex function it is always better to choose an intermediate value that ensures that we just operate the processor at the lowest possible speed to finish a given task within the settler. -->
-- ![new_56](./_Lecture9_imgs/new_01:24:35_0008.png)
 <!-- - `01:24:36`: okay so this leads to to the problem of the gap scheduling or actually task so we we'd be talked already about scheduling and the only constrains or had the primary constraints looked at is okay we have to respect the deadlines. -->
 <!-- - `01:24:52`: and but now i hear oh we want to make things a little bit more interesting and we not only want to meet all the deadlines we would also like to minimize the energy consumption the energy needed tour to finish this task. -->
 # ==============1:25:00==============
@@ -486,7 +430,6 @@ num_cycles(f=25, t=10) ❯ 250
 <!-- - `01:26:03`: footage we ought to change to change the frequencies or we can we can speed up the process or we can run it for example at two at normalize a process of frequency to which means that it runs double double the speed or we can run it at zero point five which means that it is running at half the frequency and it takes double the time. -->
 <!-- - `01:26:23`: so the computation time here is related to when running the processes at a nominal speed one. -->
 <!-- - `01:26:30`: okay and we will now look at a at a very elegant other room tour schedule and a given tacit and we will do this living with an example and i'm running running out of time here. -->
-- ![new_57](./_Lecture9_imgs/new_01:26:37_0009.png)
 <!-- - `01:26:44`: but let me let me give give the general idea and then we will we can continue around next time. -->
 <!-- - `01:26:52`: might be good to repeat this again so i hope you can still stick with me for five minutes and we will go at least food for this example so here we have an art asset so we have seven seven tasks and what do these numbers mean the first number is the arrival time second number is the absolute. -->
 <!-- - `01:27:12`: deadline and this is the computation time at normalized processor speed one and this one here is what this shows here as if this is not to schedule and actually shows what is the arrival time and where are the absolute deadlines of of the tasks so for example task task one. -->
@@ -500,7 +443,6 @@ num_cycles(f=25, t=10) ❯ 250
 <!-- - `01:28:58`: and the basic idea is to to look at all his intimates compute for each interval these intensities we will do this step by step on the following slides. -->
 <!-- - `01:29:07`: and then your look okay what is the intimate with the maximum with the highest in intensity and then you consider this interval you then you know that you need to run dear the processor it's the at a frequency that is equal to this highest intensity because are. -->
 <!-- - `01:29:28`: no other way you can finish these tasks on time within this this interval then you remove this this interval and continual with the rest suck it's a it looks and sounds a little bit complex but let's let's look at so this is actually the computation of all the interesting intervals in it. -->
-- ![new_58](./_Lecture9_imgs/new_01:29:38_0010.png)
 <!-- - `01:29:48`: in this example so this is the first fester. -->
 <!-- - `01:29:53`: exceeded the income of the highest by using the earliest atlanta running it as okay so now we need to compute these intensities here and it's really getting late. -->
 # ==============1:30:00==============
@@ -513,7 +455,6 @@ num_cycles(f=25, t=10) ❯ 250
 <!-- - `01:31:32`: so this computation is showing here so it's become computation times of the intimated in individual tasks divided by the length of the interval so the length of the interval is six minus two because interval starts at two so so the length of the interval is actually as late as four so it's eight divided by four. -->
 <!-- - `01:31:51`: a divided by four is too low we have an intensity of two. -->
 <!-- - `01:31:57`: and yeah if you go through all these intervals you would actually see that this interval between two and six is the one with the highest intensity so it's it's the end however the highest neat tour. -->
-- ![new_59](./_Lecture9_imgs/new_01:32:00_0011.png)
 <!-- - `01:32:14`: so with the highest demand. -->
 <!-- - `01:32:17`: and. -->
 <!-- - `01:32:18`: when thinking about this then this number here the intensity actually means that that the processor needs to execute at double the speed at at at normalized frequency two with double the speed in order to finish tasks one and two. -->
@@ -521,12 +462,9 @@ num_cycles(f=25, t=10) ❯ 250
 <!-- - `01:32:37`: i mean this the initial task only arrived your rights or task warframe only arrives here and needs to finish both of them here and it needs to needs to needs to sort of do or eight units of work within four time units and this is only possible by speeding up by two. -->
 <!-- - `01:32:56`: saw your saw now now your need to execute these two task in saudi there is no other way than executing these two tasks in this interview with the highest. -->
 <!-- - `01:33:07`: do with exactly this intensity with at a frequency that is equal to this intensity. -->
-- ![new_60](./_Lecture9_imgs/new_01:33:15_0012.png)
 <!-- - `01:33:16`: so this is then our schedule here saw this as the interest the interval and we saw a kale definitely need to execute two and one at at intensity two this will be remembered and then we can remove this into her. -->
 <!-- - `01:33:33`: nice to toss this into the from from our our problem set so we'll be removed. -->
-- ![new_61](./_Lecture9_imgs/new_01:33:34_0013.png)
 <!-- - `01:33:40`: i removed this insular with these two tasks from our problem said. -->
-- ![new_62](./_Lecture9_imgs/new_01:33:40_0014.png)
 <!-- - `01:33:45`: and we are then left with. -->
 <!-- - `01:33:48`: task three four five six and seven. -->
 <!-- - `01:33:51`: and we can do this by air. -->
