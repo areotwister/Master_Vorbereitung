@@ -1,0 +1,50 @@
+This is a comparison function which occured in our SAT solver Kissat to sort
+literals by their number of occurrences in vivification.  The comparison
+function is meant to be used in a sorting routine with 'strict less'
+semantics (as for 'std::sort' in the C++ template libray) and actually we
+want to have literals with more occurrences sorted before those with less.
+That is why the comparison function is called 'more' and not 'less'.
+
+We attempt to turn the original code 'more1' which compiles into two
+comparison and branch instructions into a branchless version without branch
+nor jump.
+
+By explicitly computing in 'more2.c' (in C code) the Boolean value of all
+comparisons 's > t', 's < t' and 'a < b' and then working with those
+Booleans with sequential Boolean operators '||', '!' and '&&' we still
+produce branches (with 'gcc 9.3' for AMD64, RISC-V64 and 'gcc 11.1' for
+RISC-V32). So this does not help much yet.
+
+The first branchless version is obtained by replacing in 'more3.c' the
+sequential Boolean operators by bit-wise counter-parts, e.g., '&&' by '&'.
+
+Regarding negation there is a choice in using '~' instead of '!' but that
+does not change the generated assembler much.  Since '!' avoids a warning
+without additional parenthesis on a left operator in a conjunction '&' we
+use '!'.  It further reduces the number of instructions in 'more4.c' for
+AMD64 where we go back and extend the generated 'bool' values into
+'unsigned', which is closer to the hardware registers in our processor.
+Using '!' instead of '~' requires 3 more instructions in 'more4-x86.s'.
+
+For RISC-V32 as well as RISCV-64 versions 'more[3-6]' are all branchless and
+use the same number of instructions but for AMD64 only the last two
+'more[56]' reach a minimum (while 'more[3-6]' are all branchless).
+
+These two versions 'more[56]' differ from the previous two 'more[34]' by
+using subtraction to set the most significant bit on underflow instead of
+generating setting flags instructions on (RISC-V) or after (AMD64)
+comparisons.  Then the whole words are combined bit-wise as before but
+targeting the most significant bit instead of the least.  At the end one
+additional (arithmetic) shift operation is needed though, which does not
+change the number of instructions though.
+
+Version 'more5' uses a word size of 32 bits while 'more6' uses the word size
+of the compiler, i.e., of 'size_t' which has 4 bytes for a 32-bit compiler
+and 8 bytes for a 64-bit compiler, when extending the Booleans obtained from
+the comparisons into a word.
+
+Which versions of 'more[1-6]' and compiler / word size are correct?
+
+What additional assumption can be used to to make all correct?
+
+Hint: compare and check the SMT files too (with Boolector, CVC4, Z3 etc)

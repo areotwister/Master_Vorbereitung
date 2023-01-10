@@ -736,6 +736,47 @@ v=1
 # ToDo
 - die Sache mit doppelte Zeit, aber *8
 - auf dieser Float Webseite da nachlesen
+- range und präzissio von float und double
+
+# Additional Stuff
+```python
+mantissa = 1.5
+exponent = 6 - 7
+
+mantissa * 2 ** exponent ❯ 0.75
+
+( 1 + 1/2 ) * 2**-1 ❯ 0.75
+1/2 + 1/4 ❯ 0.75
+
+
+mantissa = (1/2) + (1/2)**2
+exponent = -6
+
+mantissa * 2 ** exponent ❯ 0.01171875
+```
+- ![rechner_webseite](./_Computer-Architecture-Chapter-3-2022-12-01-slide-30-to-39_imgs/rechner_webseite.png)
+```text
+“Ties to even” is a rounding strategy where floating point numbers exact in the
+middle between two integer numbers (“ties”) are rounded towards the even
+number:
+
+0.5 → 0
+1.5 → 2
+2.5 → 2
+etc.
+
+In particular, this is the recommended, standardised rounding strategy for IEEE
+floating point numbers standard.
+
+No rounding is performed when converting an integral type number to a floating
+point type number as long as that integer can be exactly represented by a
+floating point number of the target type, which is the case here.
+```
+- https://stackoverflow.com/questions/55952892/what-is-mean-by-result-shall-be-round-ties-to-even-how-to-convert-integer-to
+- https://en.wikipedia.org/wiki/IEEE_754
+- ![bfloat](./_Computer-Architecture-Chapter-3-2022-12-01-slide-30-to-39_imgs/bfloat.png)
+- ![grs](./_Computer-Architecture-Chapter-3-2022-12-01-slide-30-to-39_imgs/grs.png)
+- https://cca.informatik.uni-freiburg.de/teaching/grs-bits/rechner.html
 
 # Timestamps
 - `00:01:14`

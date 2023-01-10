@@ -6,12 +6,12 @@ Ich strukturiere diese Email mal wie folgt:
 -  Neuer Tutoratstermin  -
 --------------------------
 
-Ich habe gerade die Bestätigung erhalten, dass wir nun den Raum 02-026 im Gebäude 51 (https://multimedia.informatik.uni-freiburg.de/room/51-3-26) für den Dienstagstermin von 16 bis 18 Uhr dauerhaft gebucht bekommen haben.
+Ich hab kürzlich vom Assistenten die Bestätigung erhalten, dass wir nun den Raum 03-026 im Gebäude 51 (https://multimedia.informatik.uni-freiburg.de/room/51-3-26) für den Dienstagstermin von 16 bis 18 Uhr dauerhaft gebucht bekommen haben.
 
 Der neue Tutoratstermin ist nun also gültig, das Tutorat findet also ab jetzt in den folgenden Räumlichkeiten und an folgendem Tag und zu folgender Uhrzeit statt:
 
 *************************************************************************************
-*  Raum 02-026 (Raum 026 im 3. Stock) in Gebäude 051 von 16 bis 18 Uhr am Dienstag  *
+*  Raum 03-026 (Raum 026 im 3. Stock) in Gebäude 051 von 16 bis 18 Uhr am Dienstag  *
 *************************************************************************************
 
 (siehe das der Email angehängte Bild)
@@ -20,31 +20,24 @@ Der neue Tutoratstermin ist nun also gültig, das Tutorat findet also ab jetzt i
 -  Verbesserung des Tutorats  -
 -------------------------------
 
-Ich hab neulich ein ziemlich gutes Feedback zum Tutorat erhalten, Vielen Dank schonmal an die Person, die es verfasst hat. Das Feedback beinhaltet die Idee, sich in erster Linie darauf zu konzentrieren die klausurrelevanten Sachen am Anfang zu zu erklären, also so Rezepte, wie man die Aufgaben schnell löst, was man beachten muss, wo es Fallstricke gibt durch die man leicht Punkte verliert usw. und gegen Ende, wenn noch Zeit ist Hintergrundinformationen wie den thematischen Kontext usw. zu erklären.
+Ich hab neulich ein ziemlich gutes Feedback zum Tutorat erhalten, Vielen Dank schonmal an die Person die es verfasst hat. Das Feedback beinhaltete die Idee sich in erster Linie darauf zu konzentrieren die klausurrelevanten Sachen am Anfang zu erklären, also so Rezepte, wie man die Aufgaben schnell löst, was man beachten muss, wo es Fallstricke gibt durch die man leicht Punkte verliert usw. und erst gegen Ende, wenn noch Zeit ist Hintergrundinformationen wie den thematischen Kontext usw. zu erklären.
 
 So kann sicher gegangen werden, dass die für euch allerwichtigsten Informationen auf jeden Fall schonmal im Tutorat enthalten sind. Das ganze entspricht zwar theoretisch nicht umbedingt dem Konzept, wie eine gute Erklärung aufgebaut sein sollte, wo man nämlich in erster Linie Warum-Fragen, wie "Warum wird das gerade so gemacht und nicht anders" klären sollte. Aber ich schätze hier ist die Praxis ausschlaggebender und praktisch lässt sich nur auf diesem Weg sicherstellen, dass ihr Studenten in der kurzen Tutoratszeit den optimalen Nutzen erhaltet.
 
-Ich hab im letzten Tutorat einen stärkeren Fokus darauf gelegt die wichtigen Punkte besonders zu betonnen und Erklärungen sein zu lassen, bei denen man sowieso irgendwann nicht mehr folgen kann und weniger in die Details zu gehen. Es lief glaub schon besser als bisher, aber war immer noch weit entfernt vom Optimum. Daher wende ich ab jetzt das erhaltene Feedback an und erkläre am Anfang einfach nur die Rezepte, wie man vorgeht beim Lösen, mit möglichst kurzen Begründungen für alles und werde erst am Ende, wenn noch Zeit ist Hintergrundinformatinen geben, damit ihr Studenten am Ende auch möglichst sicher mit genau dem Wissen aus dem Tutorat hinausgeht, welches ihr euch vom Tutorat versprochen habt.
+Ich hab im letzten Tutorat einen stärkeren Fokus darauf gelegt die wichtigen Punkte besonders zu betonnen und Erklärungen sein zu lassen, bei denen man sowieso irgendwann nicht mehr folgen kann und weniger in die Details zu gehen. Es lief glaub schon besser als davor, aber war auch wieder unoptimal, da es am Ende zu viel Zeit gebraucht hat.
 
-Das Feedback hat auf jeden Fall die optimale Lösung für das Problem geboten, was sich in den bisherigen Tutoraten durchzieht, auf welche ich irgendwie nicht selbst gekommen bin >_<
+Daher wende ich ab jetzt das erhaltene Feedback an und erkläre am Anfang einfach nur die Rezepte, wie man vorgeht beim Lösen, mit möglichst kurzen Begründungen für alles und werde erst am Ende, wenn noch Zeit ist Hintergrundinformatinen geben, damit ihr Studenten am Ende auch möglichst sicher mit genau dem Wissen aus dem Tutorat hinausgeht, welches ihr euch vom Tutorat versprochen habt.
 
 Ganz zum Schluss, nachdem die Hintergrundinformationen, wie der thematische Kontext zur Vorlesung usw. geklärt sind, kann ich auch noch Fragen zum neuen Blatt beantworten. Ich bin nach dem Tutorat sowieso noch länger im Raum, weil ich die Aufzeichnung von Camtasia (zu dem es leider auf den Pultrechnern keine Alternative gibt) rendern lassen muss. In der Zeit habe ich sowieso nichts besseres zu tun und ihr könnt Fragen stellen oder euch auch einfach hinhocken und das momentane Übungsblatt bearbeiten und wenn Fragen aufkommen, diese Stellen.
 
-Das wäre so der neue Plan, also folgende Reihenfolge:
+Das wäre so der neue Plan. Ab jetzt ist das Tutorat also in der folgenden Reihenfolge strukturiert:
 
-0. Rezepte zum Lösen der Aufgaben (Abstrakte Erklärungen, was machen beachten muss, Stolpersteine durch die man leicht Punkte verliert)
-1. Hintergrundinformationen (Thematischer Kontext zur Vorlesung, Überblick und Einordung der Themen, Beantworten der Warum-Fragen, interessante Fakten und Linux-Kniffe)
-2. Fragen zum neuen Übungsblatt beantworten (nach Beeindigung des offziellen Tutorats, sind nicht mehr auf der Aufzeichnung, damit es sich auch lohnt zu kommen und weil des Rendern der Aufzeichnung ziemlich lange braucht)
+0. Rezepte zum Lösen der Aufgaben (Abstrakte Erklärungen, was man beachten muss, Stolpersteine durch die man leicht Punkte verliert)
+1. Hintergrundinformationen (Thematischer Kontext zur Vorlesung, Überblick und Einordung der Themen in den Aufgaben, Beantworten der Warum-Fragen, interessante Fakten und Linux-Kniffe)
+2. Fragen zum neuen Übungsblatt beantworten (nach Beeindigung des offziellen Tutorats, ist nicht mehr auf der Aufzeichnung, weil des Rendern der Aufzeichnung ziemlich lange braucht)
 
-Denkt immer daran, dass ihr Feedback geben könnt: https://forms.gle/QuAfyW18J8u4mxPX6 um zu bewerten wie ich mich so dabei Schlage den neuen Plan fürs Tutorat umzusetzen:
+Denkt immer daran, dass ihr Feedback geben könnt: https://forms.gle/QuAfyW18J8u4mxPX6 um zu bewerten wie ich mich so dabei Schlage den neuen Plan fürs Tutorat umzusetzen.
 
------------------
--  Korrekturen  -
------------------
-
-Die Korrekturen des Weihnachtsblattes sind seid Donnerstag Nachmittag fertig.
-Eure neuen Abgaben werden in Kürze korrigiert.
-
-Viele Grüße und eine besinnliche Weihnachtszeit euch noch,
+Viele Grüße und einen schönes Jahr 2023 euch noch,
 
 Jürgen
